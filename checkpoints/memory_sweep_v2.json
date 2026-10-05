@@ -1,0 +1,2130 @@
+{
+  "meta": {
+    "L_values": [
+      "350",
+      "700",
+      "1400",
+      "2800",
+      "5600",
+      "None"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "alpha": 0.5,
+    "norm": "layer",
+    "max_per_class": 5000
+  },
+  "cicids": {
+    "350": {
+      "42": {
+        "nonstat": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.7321899736147758,
+          "macro_f1": 0.43984161601595473,
+          "f1_BENIGN": 0.8935258500232883,
+          "f1_DoS": 0.0,
+          "f1_DDoS": 0.6745602165087957,
+          "f1_PortScan": 0.9184707508060801,
+          "f1_BruteForce": 0.0,
+          "f1_WebAttack": 0.0,
+          "f1_Bot": 0.5923344947735192,
+          "rec_BENIGN": 0.9590081983603279,
+          "rec_DoS": 0.0,
+          "rec_DDoS": 0.997,
+          "rec_PortScan": 0.997,
+          "rec_BruteForce": 0.0,
+          "rec_WebAttack": 0.0,
+          "rec_Bot": 0.9615384615384616
+        },
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9591029023746702,
+          "macro_f1": 0.9467704814810433,
+          "f1_BENIGN": 0.9713189254696021,
+          "f1_DoS": 0.9244306418219461,
+          "f1_DDoS": 0.9539375928677564,
+          "f1_PortScan": 0.9377713458755427,
+          "f1_BruteForce": 0.9899598393574297,
+          "f1_WebAttack": 0.9159090909090909,
+          "f1_Bot": 0.9340659340659341,
+          "rec_BENIGN": 0.9616076784643072,
+          "rec_DoS": 0.893,
+          "rec_DDoS": 0.963,
+          "rec_PortScan": 0.972,
+          "rec_BruteForce": 0.986,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9615384615384616,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 75
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 125
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 175
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 275
+            }
+          ]
+        },
+        "_buffer_client0": 275,
+        "_total_rows": 39410,
+        "_kb_client0": 83.7890625
+      },
+      "43": {
+        "nonstat": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.7360462756241121,
+          "macro_f1": 0.487302578340243,
+          "f1_BENIGN": 0.853555005305978,
+          "f1_DoS": 0.0,
+          "f1_DDoS": 0.6807351940095303,
+          "f1_PortScan": 0.9308235294117647,
+          "f1_BruteForce": 0.0,
+          "f1_WebAttack": 0.0,
+          "f1_Bot": 0.9460043196544277,
+          "rec_BENIGN": 0.9650069986002799,
+          "rec_DoS": 0.0,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.989,
+          "rec_BruteForce": 0.0,
+          "rec_WebAttack": 0.0,
+          "rec_Bot": 0.9909502262443439
+        },
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9412421351735336,
+          "macro_f1": 0.917642626642426,
+          "f1_BENIGN": 0.9735987002437043,
+          "f1_DoS": 0.8600536193029491,
+          "f1_DDoS": 0.8927563499529633,
+          "f1_PortScan": 0.8948148148148148,
+          "f1_BruteForce": 0.9924812030075187,
+          "f1_WebAttack": 0.9414519906323185,
+          "f1_Bot": 0.8683417085427135,
+          "rec_BENIGN": 0.9586082783443312,
+          "rec_DoS": 0.802,
+          "rec_DDoS": 0.949,
+          "rec_PortScan": 0.906,
+          "rec_BruteForce": 0.99,
+          "rec_WebAttack": 0.9781021897810219,
+          "rec_Bot": 0.9773755656108597,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 75
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 107
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 140
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 215
+            }
+          ]
+        },
+        "_buffer_client0": 215,
+        "_total_rows": 39410,
+        "_kb_client0": 65.5078125
+      },
+      "44": {
+        "nonstat": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.7321899736147758,
+          "macro_f1": 0.4344181262603365,
+          "f1_BENIGN": 0.9051756705704571,
+          "f1_DoS": 0.0,
+          "f1_DDoS": 0.6809669731018045,
+          "f1_PortScan": 0.9352720450281425,
+          "f1_BruteForce": 0.0,
+          "f1_WebAttack": 0.0,
+          "f1_Bot": 0.5195121951219512,
+          "rec_BENIGN": 0.9582083583283343,
+          "rec_DoS": 0.0,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.997,
+          "rec_BruteForce": 0.0,
+          "rec_WebAttack": 0.0,
+          "rec_Bot": 0.9638009049773756
+        },
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9489547391922062,
+          "macro_f1": 0.9325742104346358,
+          "f1_BENIGN": 0.9729126509079842,
+          "f1_DoS": 0.8648357565966612,
+          "f1_DDoS": 0.9040835707502374,
+          "f1_PortScan": 0.9285714285714286,
+          "f1_BruteForce": 0.9915211970074813,
+          "f1_WebAttack": 0.9290617848970252,
+          "f1_Bot": 0.9370330843116329,
+          "rec_BENIGN": 0.9588082383523295,
+          "rec_DoS": 0.803,
+          "rec_DDoS": 0.952,
+          "rec_PortScan": 0.962,
+          "rec_BruteForce": 0.994,
+          "rec_WebAttack": 0.9878345498783455,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 52
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 102
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 128
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 228
+            }
+          ]
+        },
+        "_buffer_client0": 228,
+        "_total_rows": 39410,
+        "_kb_client0": 69.46875
+      }
+    },
+    "700": {
+      "42": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.973817738989243,
+          "macro_f1": 0.9637021331788412,
+          "f1_BENIGN": 0.9788221056877773,
+          "f1_DoS": 0.9734422880490297,
+          "f1_DDoS": 0.987629886194953,
+          "f1_PortScan": 0.9600788565795959,
+          "f1_BruteForce": 0.9904761904761905,
+          "f1_WebAttack": 0.9171396140749148,
+          "f1_Bot": 0.9383259911894273,
+          "rec_BENIGN": 0.9704059188162367,
+          "rec_DoS": 0.953,
+          "rec_DDoS": 0.998,
+          "rec_PortScan": 0.974,
+          "rec_BruteForce": 0.988,
+          "rec_WebAttack": 0.9829683698296837,
+          "rec_Bot": 0.9638009049773756,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 128
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 228
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 328
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 528
+            }
+          ]
+        },
+        "_buffer_client0": 528,
+        "_total_rows": 39410,
+        "_kb_client0": 160.875
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9675258778161153,
+          "macro_f1": 0.9585947306771966,
+          "f1_BENIGN": 0.973780487804878,
+          "f1_DoS": 0.9742033383915023,
+          "f1_DDoS": 0.9920556107249255,
+          "f1_PortScan": 0.9166265060240963,
+          "f1_BruteForce": 0.9919759277833501,
+          "f1_WebAttack": 0.9392523364485982,
+          "f1_Bot": 0.9222689075630253,
+          "rec_BENIGN": 0.9580083983203359,
+          "rec_DoS": 0.963,
+          "rec_DDoS": 0.999,
+          "rec_PortScan": 0.951,
+          "rec_BruteForce": 0.989,
+          "rec_WebAttack": 0.9781021897810219,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 130
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 187
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 245
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 395
+            }
+          ]
+        },
+        "_buffer_client0": 395,
+        "_total_rows": 39410,
+        "_kb_client0": 120.3515625
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9756444083620864,
+          "macro_f1": 0.9711582002459858,
+          "f1_BENIGN": 0.9789983844911146,
+          "f1_DoS": 0.970317297850563,
+          "f1_DDoS": 0.9925558312655087,
+          "f1_PortScan": 0.9463508941517641,
+          "f1_BruteForce": 0.9925112331502746,
+          "f1_WebAttack": 0.9609467455621302,
+          "f1_Bot": 0.9564270152505446,
+          "rec_BENIGN": 0.9694061187762447,
+          "rec_DoS": 0.948,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.979,
+          "rec_BruteForce": 0.994,
+          "rec_WebAttack": 0.9878345498783455,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 102
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 202
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 253
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 447
+            }
+          ]
+        },
+        "_buffer_client0": 447,
+        "_total_rows": 39410,
+        "_kb_client0": 136.1953125
+      }
+    },
+    "1400": {
+      "42": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9792977471077735,
+          "macro_f1": 0.9723449103423888,
+          "f1_BENIGN": 0.9825587256779917,
+          "f1_DoS": 0.979177247333672,
+          "f1_DDoS": 0.9905613512170889,
+          "f1_PortScan": 0.9666339548577036,
+          "f1_BruteForce": 0.9929718875502008,
+          "f1_WebAttack": 0.9317919075144508,
+          "f1_Bot": 0.9627192982456141,
+          "rec_BENIGN": 0.9744051189762047,
+          "rec_DoS": 0.964,
+          "rec_DDoS": 0.997,
+          "rec_PortScan": 0.985,
+          "rec_BruteForce": 0.989,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 228
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 428
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 628
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1028
+            }
+          ]
+        },
+        "_buffer_client0": 1028,
+        "_total_rows": 39410,
+        "_kb_client0": 313.21875
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.97462959204384,
+          "macro_f1": 0.966916714154538,
+          "f1_BENIGN": 0.9790634166076666,
+          "f1_DoS": 0.9818365287588294,
+          "f1_DDoS": 0.9955201592832255,
+          "f1_PortScan": 0.9376218323586745,
+          "f1_BruteForce": 0.9934771700953337,
+          "f1_WebAttack": 0.9479905437352246,
+          "f1_Bot": 0.9329073482428115,
+          "rec_BENIGN": 0.9678064387122576,
+          "rec_DoS": 0.973,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.962,
+          "rec_BruteForce": 0.99,
+          "rec_WebAttack": 0.975669099756691,
+          "rec_Bot": 0.9909502262443439,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 180
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 260
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 366
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 666
+            }
+          ]
+        },
+        "_buffer_client0": 666,
+        "_total_rows": 39410,
+        "_kb_client0": 202.921875
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9796021920032474,
+          "macro_f1": 0.9752283450172917,
+          "f1_BENIGN": 0.981759548523632,
+          "f1_DoS": 0.9766260162601627,
+          "f1_DDoS": 0.9950248756218906,
+          "f1_PortScan": 0.9586776859504132,
+          "f1_BruteForce": 0.9954932398597897,
+          "f1_WebAttack": 0.9598108747044918,
+          "f1_Bot": 0.9592061742006616,
+          "rec_BENIGN": 0.974005198960208,
+          "rec_DoS": 0.961,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.986,
+          "rec_BruteForce": 0.994,
+          "rec_WebAttack": 0.9878345498783455,
+          "rec_Bot": 0.9841628959276018,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 202
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 402
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 503
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 847
+            }
+          ]
+        },
+        "_buffer_client0": 847,
+        "_total_rows": 39410,
+        "_kb_client0": 258.0703125
+      }
+    },
+    "2800": {
+      "42": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9678303227115892,
+          "macro_f1": 0.9510593845797415,
+          "f1_BENIGN": 0.9801030198969801,
+          "f1_DoS": 0.9776195320447609,
+          "f1_DDoS": 0.9910536779324056,
+          "f1_PortScan": 0.9114052953156823,
+          "f1_BruteForce": 0.9939759036144579,
+          "f1_WebAttack": 0.9339513325608343,
+          "f1_Bot": 0.8693069306930693,
+          "rec_BENIGN": 0.9702059588082383,
+          "rec_DoS": 0.961,
+          "rec_DDoS": 0.997,
+          "rec_PortScan": 0.895,
+          "rec_BruteForce": 0.99,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 428
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 828
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1157
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1771
+            }
+          ]
+        },
+        "_buffer_client0": 1771,
+        "_total_rows": 39410,
+        "_kb_client0": 539.6015625
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.976050334889385,
+          "macro_f1": 0.969392512912136,
+          "f1_BENIGN": 0.98047941741681,
+          "f1_DoS": 0.9808660624370594,
+          "f1_DDoS": 0.9960159362549801,
+          "f1_PortScan": 0.9368932038834952,
+          "f1_BruteForce": 0.9934771700953337,
+          "f1_WebAttack": 0.9415887850467289,
+          "f1_Bot": 0.9564270152505446,
+          "rec_BENIGN": 0.9692061587682463,
+          "rec_DoS": 0.974,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.965,
+          "rec_BruteForce": 0.99,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 280
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 360
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 466
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1030
+            }
+          ]
+        },
+        "_buffer_client0": 1030,
+        "_total_rows": 39410,
+        "_kb_client0": 313.828125
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9820377511670387,
+          "macro_f1": 0.978354472730074,
+          "f1_BENIGN": 0.9842646762154529,
+          "f1_DoS": 0.98334174659263,
+          "f1_DDoS": 0.9955201592832255,
+          "f1_PortScan": 0.9558037882467217,
+          "f1_BruteForce": 0.9964982491245623,
+          "f1_WebAttack": 0.9585798816568047,
+          "f1_Bot": 0.974472807991121,
+          "rec_BENIGN": 0.9756048790241951,
+          "rec_DoS": 0.974,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.984,
+          "rec_BruteForce": 0.996,
+          "rec_WebAttack": 0.9854014598540146,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 402
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 712
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 818
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1462
+            }
+          ]
+        },
+        "_buffer_client0": 1462,
+        "_total_rows": 39410,
+        "_kb_client0": 445.453125
+      }
+    },
+    "5600": {
+      "42": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.973817738989243,
+          "macro_f1": 0.9627290275588077,
+          "f1_BENIGN": 0.9805266875189184,
+          "f1_DoS": 0.9760570555272542,
+          "f1_DDoS": 0.9895781637717121,
+          "f1_PortScan": 0.9435643564356435,
+          "f1_BruteForce": 0.9954932398597897,
+          "f1_WebAttack": 0.9317919075144508,
+          "f1_Bot": 0.9220917822838848,
+          "rec_BENIGN": 0.9716056788642271,
+          "rec_DoS": 0.958,
+          "rec_DDoS": 0.997,
+          "rec_PortScan": 0.953,
+          "rec_BruteForce": 0.994,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9773755656108597,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 684
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1484
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1813
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2627
+            }
+          ]
+        },
+        "_buffer_client0": 2627,
+        "_total_rows": 39410,
+        "_kb_client0": 800.4140625
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.97462959204384,
+          "macro_f1": 0.9643521940908636,
+          "f1_BENIGN": 0.9823178741032637,
+          "f1_DoS": 0.9818913480885312,
+          "f1_DDoS": 0.9945191828599901,
+          "f1_PortScan": 0.9248269040553907,
+          "f1_BruteForce": 0.994994994994995,
+          "f1_WebAttack": 0.9457547169811321,
+          "f1_Bot": 0.9261603375527426,
+          "rec_BENIGN": 0.972005598880224,
+          "rec_DoS": 0.976,
+          "rec_DDoS": 0.998,
+          "rec_PortScan": 0.935,
+          "rec_BruteForce": 0.994,
+          "rec_WebAttack": 0.975669099756691,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 480
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 560
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 666
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1430
+            }
+          ]
+        },
+        "_buffer_client0": 1430,
+        "_total_rows": 39410,
+        "_kb_client0": 435.703125
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.979703673635072,
+          "macro_f1": 0.9719168438352151,
+          "f1_BENIGN": 0.983941016058984,
+          "f1_DoS": 0.9849094567404426,
+          "f1_DDoS": 0.9960159362549801,
+          "f1_PortScan": 0.9511111111111111,
+          "f1_BruteForce": 0.997,
+          "f1_WebAttack": 0.9473684210526315,
+          "f1_Bot": 0.9430719656283566,
+          "rec_BENIGN": 0.974005198960208,
+          "rec_DoS": 0.979,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.963,
+          "rec_BruteForce": 0.997,
+          "rec_WebAttack": 0.9854014598540146,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 802
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1312
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1418
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2372
+            }
+          ]
+        },
+        "_buffer_client0": 2372,
+        "_total_rows": 39410,
+        "_kb_client0": 722.71875
+      }
+    },
+    "unbounded": {
+      "42": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9739192206210676,
+          "macro_f1": 0.964565395205797,
+          "f1_BENIGN": 0.9805345436207766,
+          "f1_DoS": 0.9655526992287917,
+          "f1_DDoS": 0.9798525798525799,
+          "f1_PortScan": 0.9544787077826725,
+          "f1_BruteForce": 0.9944806823883593,
+          "f1_WebAttack": 0.9339513325608343,
+          "f1_Bot": 0.9431072210065645,
+          "rec_BENIGN": 0.972005598880224,
+          "rec_DoS": 0.939,
+          "rec_DDoS": 0.997,
+          "rec_PortScan": 0.975,
+          "rec_BruteForce": 0.991,
+          "rec_WebAttack": 0.9805352798053528,
+          "rec_Bot": 0.9751131221719457,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 988
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2815
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 3144
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 4059
+            }
+          ]
+        },
+        "_buffer_client0": 4059,
+        "_total_rows": 39410,
+        "_kb_client0": 1236.7265625
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9753399634666126,
+          "macro_f1": 0.9646852106325985,
+          "f1_BENIGN": 0.9844851904090268,
+          "f1_DoS": 0.9714285714285714,
+          "f1_DDoS": 0.9823008849557522,
+          "f1_PortScan": 0.9387144992526159,
+          "f1_BruteForce": 0.9949899799599199,
+          "f1_WebAttack": 0.9481132075471698,
+          "f1_Bot": 0.9327641408751334,
+          "rec_BENIGN": 0.977004599080184,
+          "rec_DoS": 0.952,
+          "rec_DDoS": 0.999,
+          "rec_PortScan": 0.942,
+          "rec_BruteForce": 0.993,
+          "rec_WebAttack": 0.9781021897810219,
+          "rec_Bot": 0.9886877828054299,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1040
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1120
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1226
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2060
+            }
+          ]
+        },
+        "_buffer_client0": 2060,
+        "_total_rows": 39410,
+        "_kb_client0": 627.65625
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Friday",
+          "round": 25,
+          "overall": 0.9835599756444083,
+          "macro_f1": 0.9801700141950767,
+          "f1_BENIGN": 0.9857705116560702,
+          "f1_DoS": 0.9838546922300706,
+          "f1_DDoS": 0.9945300845350572,
+          "f1_PortScan": 0.9613152804642167,
+          "f1_BruteForce": 0.995995995995996,
+          "f1_WebAttack": 0.9619952494061758,
+          "f1_Bot": 0.977728285077951,
+          "rec_BENIGN": 0.9766046790641871,
+          "rec_DoS": 0.975,
+          "rec_DDoS": 1.0,
+          "rec_PortScan": 0.994,
+          "rec_BruteForce": 0.995,
+          "rec_WebAttack": 0.9854014598540146,
+          "rec_Bot": 0.9932126696832579,
+          "detected": [
+            {
+              "concept": "Tuesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2141
+            },
+            {
+              "concept": "Wednesday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 3817
+            },
+            {
+              "concept": "Thursday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 3923
+            },
+            {
+              "concept": "Friday",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 5148
+            }
+          ]
+        },
+        "_buffer_client0": 5148,
+        "_total_rows": 39410,
+        "_kb_client0": 1568.53125
+      }
+    }
+  },
+  "unsw": {
+    "350": {
+      "42": {
+        "nonstat": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.5456323179322742,
+          "macro_f1": 0.1647139953506927,
+          "f1_Normal": 0.811760426770126,
+          "f1_Fuzzers": 0.0,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.04221069576104453,
+          "f1_DoS": 0.0,
+          "f1_Exploits": 0.0,
+          "f1_Generic": 0.7273215965596022,
+          "f1_Reconnaissance": 0.0,
+          "f1_Shellcode": 0.06584723441615452,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.9047837837837838,
+          "rec_Fuzzers": 0.0,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.8096054888507719,
+          "rec_DoS": 0.0,
+          "rec_Exploits": 0.0,
+          "rec_Generic": 0.5735785067034074,
+          "rec_Reconnaissance": 0.0,
+          "rec_Shellcode": 0.3968253968253968,
+          "rec_Worms": 0.0
+        },
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.5677743769129865,
+          "macro_f1": 0.2835430595936029,
+          "f1_Normal": 0.7451823564334195,
+          "f1_Fuzzers": 0.32314929973503487,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.05485158826592605,
+          "f1_DoS": 0.2785923753665689,
+          "f1_Exploits": 0.489836721092969,
+          "f1_Generic": 0.8384067938520423,
+          "f1_Reconnaissance": 0.0,
+          "f1_Shellcode": 0.07553284307615606,
+          "f1_Worms": 0.029878618113912233,
+          "rec_Normal": 0.6275945945945945,
+          "rec_Fuzzers": 0.4929066314747608,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.27101200686106347,
+          "rec_DoS": 0.3949620934213744,
+          "rec_Exploits": 0.39615522817103843,
+          "rec_Generic": 0.7428859095967357,
+          "rec_Reconnaissance": 0.0,
+          "rec_Shellcode": 0.8015873015873016,
+          "rec_Worms": 0.7272727272727273,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 56
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 107
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 152
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 171
+            }
+          ]
+        },
+        "_buffer_client0": 171,
+        "_total_rows": 55009,
+        "_kb_client0": 28.0546875
+      },
+      "43": {
+        "nonstat": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.4781130058786377,
+          "macro_f1": 0.1398261308837585,
+          "f1_Normal": 0.7576132470498668,
+          "f1_Fuzzers": 0.0,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.043094808578873524,
+          "f1_DoS": 0.0,
+          "f1_Exploits": 0.0,
+          "f1_Generic": 0.5268536214360935,
+          "f1_Reconnaissance": 0.0,
+          "f1_Shellcode": 0.07069963177275118,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.8606486486486487,
+          "rec_Fuzzers": 0.0,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.7375643224699828,
+          "rec_DoS": 0.0,
+          "rec_Exploits": 0.0,
+          "rec_Generic": 0.35790366170314236,
+          "rec_Reconnaissance": 0.0,
+          "rec_Shellcode": 0.8888888888888888,
+          "rec_Worms": 0.0
+        },
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.5929043385317981,
+          "macro_f1": 0.2737585508042148,
+          "f1_Normal": 0.8100647057161425,
+          "f1_Fuzzers": 0.15432510562597287,
+          "f1_Analysis": 0.040013487692480615,
+          "f1_Backdoors": 0.06661809097533049,
+          "f1_DoS": 0.01647058823529412,
+          "f1_Exploits": 0.4852621780949426,
+          "f1_Generic": 0.8564946114577425,
+          "f1_Reconnaissance": 0.19708029197080293,
+          "f1_Shellcode": 0.09063198536882748,
+          "f1_Worms": 0.02062446290461186,
+          "rec_Normal": 0.7748378378378379,
+          "rec_Fuzzers": 0.11448366875618608,
+          "rec_Analysis": 0.26292466765140327,
+          "rec_Backdoors": 0.548885077186964,
+          "rec_DoS": 0.008559550012227928,
+          "rec_Exploits": 0.3512396694214876,
+          "rec_Generic": 0.7601610937417201,
+          "rec_Reconnaissance": 0.1158466819221968,
+          "rec_Shellcode": 0.58994708994709,
+          "rec_Worms": 0.8181818181818182,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 68
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 119
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 136
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 168
+            }
+          ]
+        },
+        "_buffer_client0": 168,
+        "_total_rows": 55009,
+        "_kb_client0": 27.5625
+      },
+      "44": {
+        "nonstat": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.5042267890977992,
+          "macro_f1": 0.14904725579786254,
+          "f1_Normal": 0.7802891708468574,
+          "f1_Fuzzers": 0.0,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.04900805342761736,
+          "f1_DoS": 0.0,
+          "f1_Exploits": 0.0,
+          "f1_Generic": 0.5763108261033573,
+          "f1_Reconnaissance": 0.0,
+          "f1_Shellcode": 0.08486450760079313,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.8933783783783784,
+          "rec_Fuzzers": 0.0,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.855917667238422,
+          "rec_DoS": 0.0,
+          "rec_Exploits": 0.0,
+          "rec_Generic": 0.40480101743415825,
+          "rec_Reconnaissance": 0.0,
+          "rec_Shellcode": 0.8492063492063492,
+          "rec_Worms": 0.0
+        },
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.5974347762716805,
+          "macro_f1": 0.27751713440293346,
+          "f1_Normal": 0.8112450970385384,
+          "f1_Fuzzers": 0.12589882679449982,
+          "f1_Analysis": 0.051496405283397426,
+          "f1_Backdoors": 0.012208067940552018,
+          "f1_DoS": 0.2748824263365006,
+          "f1_Exploits": 0.5500676988285159,
+          "f1_Generic": 0.8470307370934049,
+          "f1_Reconnaissance": 0.018156808803301238,
+          "f1_Shellcode": 0.056926315789473686,
+          "f1_Worms": 0.027258960121150935,
+          "rec_Normal": 0.7518378378378379,
+          "rec_Fuzzers": 0.08231606730451996,
+          "rec_Analysis": 0.2274741506646972,
+          "rec_Backdoors": 0.03945111492281304,
+          "rec_DoS": 0.35020787478601123,
+          "rec_Exploits": 0.4196909809558031,
+          "rec_Generic": 0.7520534152933072,
+          "rec_Reconnaissance": 0.009439359267734555,
+          "rec_Shellcode": 0.8941798941798942,
+          "rec_Worms": 0.6136363636363636,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 53
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 87
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 138
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 189
+            }
+          ]
+        },
+        "_buffer_client0": 189,
+        "_total_rows": 55009,
+        "_kb_client0": 31.0078125
+      }
+    },
+    "700": {
+      "42": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.6548486615167857,
+          "macro_f1": 0.29106693273216905,
+          "f1_Normal": 0.8275046088655312,
+          "f1_Fuzzers": 0.19910562180579217,
+          "f1_Analysis": 0.029574861367837338,
+          "f1_Backdoors": 0.03961352657004831,
+          "f1_DoS": 0.1997471554993679,
+          "f1_Exploits": 0.5715099390556473,
+          "f1_Generic": 0.9282752094408416,
+          "f1_Reconnaissance": 0.0,
+          "f1_Shellcode": 0.08448734088683732,
+          "f1_Worms": 0.030851063829787233,
+          "rec_Normal": 0.8128108108108109,
+          "rec_Fuzzers": 0.15423952490927087,
+          "rec_Analysis": 0.07090103397341212,
+          "rec_Backdoors": 0.2109777015437393,
+          "rec_DoS": 0.17388114453411593,
+          "rec_Exploits": 0.4506827164929932,
+          "rec_Generic": 0.8836839595145991,
+          "rec_Reconnaissance": 0.0,
+          "rec_Shellcode": 0.798941798941799,
+          "rec_Worms": 0.6590909090909091,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 110
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 215
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 296
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 333
+            }
+          ]
+        },
+        "_buffer_client0": 333,
+        "_total_rows": 55009,
+        "_kb_client0": 54.6328125
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.6522494291405528,
+          "macro_f1": 0.27431696643588016,
+          "f1_Normal": 0.8241839862793555,
+          "f1_Fuzzers": 0.1406750431140675,
+          "f1_Analysis": 0.06061746987951807,
+          "f1_Backdoors": 0.09897126640652713,
+          "f1_DoS": 0.0033357159876101976,
+          "f1_Exploits": 0.5619090499774876,
+          "f1_Generic": 0.9376689236256235,
+          "f1_Reconnaissance": 0.001993024414549078,
+          "f1_Shellcode": 0.08843056928944766,
+          "f1_Worms": 0.025384615384615384,
+          "rec_Normal": 0.8247297297297297,
+          "rec_Fuzzers": 0.09419333553282745,
+          "rec_Analysis": 0.2378138847858198,
+          "rec_Backdoors": 0.47855917667238423,
+          "rec_DoS": 0.0017119100024455857,
+          "rec_Exploits": 0.44843693855551564,
+          "rec_Generic": 0.8916326638757882,
+          "rec_Reconnaissance": 0.0011441647597254005,
+          "rec_Shellcode": 0.828042328042328,
+          "rec_Worms": 0.75,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 140
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 236
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 271
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 321
+            }
+          ]
+        },
+        "_buffer_client0": 321,
+        "_total_rows": 55009,
+        "_kb_client0": 52.6640625
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.6895131904970121,
+          "macro_f1": 0.35805874054392395,
+          "f1_Normal": 0.8291444529068291,
+          "f1_Fuzzers": 0.18603174603174602,
+          "f1_Analysis": 0.023880597014925373,
+          "f1_Backdoors": 0.050664195242508495,
+          "f1_DoS": 0.38195112564941314,
+          "f1_Exploits": 0.5907293874978514,
+          "f1_Generic": 0.9399678794927175,
+          "f1_Reconnaissance": 0.47289324279194034,
+          "f1_Shellcode": 0.0698856416772554,
+          "f1_Worms": 0.03543913713405239,
+          "rec_Normal": 0.7944324324324324,
+          "rec_Fuzzers": 0.14500164962058726,
+          "rec_Analysis": 0.06499261447562776,
+          "rec_Backdoors": 0.14065180102915953,
+          "rec_DoS": 0.4854487649792125,
+          "rec_Exploits": 0.46307941070786923,
+          "rec_Generic": 0.8994223941497536,
+          "rec_Reconnaissance": 0.6075514874141876,
+          "rec_Shellcode": 0.291005291005291,
+          "rec_Worms": 0.5227272727272727,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 107
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 177
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 282
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 387
+            }
+          ]
+        },
+        "_buffer_client0": 387,
+        "_total_rows": 55009,
+        "_kb_client0": 63.4921875
+      }
+    },
+    "1400": {
+      "42": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.68341592576398,
+          "macro_f1": 0.31941808310705905,
+          "f1_Normal": 0.8385905481201755,
+          "f1_Fuzzers": 0.22226458253907738,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0672736469398078,
+          "f1_DoS": 0.335418114431318,
+          "f1_Exploits": 0.5948072383949646,
+          "f1_Generic": 0.9581597931128352,
+          "f1_Reconnaissance": 0.045366795366795366,
+          "f1_Shellcode": 0.10167224080267559,
+          "f1_Worms": 0.030627871362940276,
+          "rec_Normal": 0.8162432432432433,
+          "rec_Fuzzers": 0.19234576047509072,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.2281303602058319,
+          "rec_DoS": 0.3541208119344583,
+          "rec_Exploits": 0.4753862738052461,
+          "rec_Generic": 0.9325949870171162,
+          "rec_Reconnaissance": 0.02688787185354691,
+          "rec_Shellcode": 0.8042328042328042,
+          "rec_Worms": 0.6818181818181818,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 196
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 406
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 557
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 629
+            }
+          ]
+        },
+        "_buffer_client0": 629,
+        "_total_rows": 55009,
+        "_kb_client0": 103.1953125
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.6937399795948113,
+          "macro_f1": 0.32965974475397225,
+          "f1_Normal": 0.8420243161900216,
+          "f1_Fuzzers": 0.13909455030950357,
+          "f1_Analysis": 0.09662231320368475,
+          "f1_Backdoors": 0.04156479217603912,
+          "f1_DoS": 0.06630076838638858,
+          "f1_Exploits": 0.603248010324801,
+          "f1_Generic": 0.949117801844722,
+          "f1_Reconnaissance": 0.400213447171825,
+          "f1_Shellcode": 0.12515042117930206,
+          "f1_Worms": 0.033261026753434564,
+          "rec_Normal": 0.8582162162162162,
+          "rec_Fuzzers": 0.09452325965028044,
+          "rec_Analysis": 0.6971935007385525,
+          "rec_Backdoors": 0.029159519725557463,
+          "rec_DoS": 0.03692834433846906,
+          "rec_Exploits": 0.5038627380524614,
+          "rec_Generic": 0.907901012135022,
+          "rec_Reconnaissance": 0.32179633867276886,
+          "rec_Shellcode": 0.6878306878306878,
+          "rec_Worms": 0.5227272727272727,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 280
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 446
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 516
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 584
+            }
+          ]
+        },
+        "_buffer_client0": 584,
+        "_total_rows": 55009,
+        "_kb_client0": 95.8125
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7188213574308896,
+          "macro_f1": 0.37248810281518463,
+          "f1_Normal": 0.8422884734153051,
+          "f1_Fuzzers": 0.2178919397697077,
+          "f1_Analysis": 0.003416856492027335,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.43610396080710784,
+          "f1_Exploits": 0.6046405041535377,
+          "f1_Generic": 0.9663278785754724,
+          "f1_Reconnaissance": 0.5247599797877716,
+          "f1_Shellcode": 0.09770540340488527,
+          "f1_Worms": 0.031746031746031744,
+          "rec_Normal": 0.8109189189189189,
+          "rec_Fuzzers": 0.18261299901022765,
+          "rec_Analysis": 0.008862629246676515,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6422108094888725,
+          "rec_Exploits": 0.47403880704275964,
+          "rec_Generic": 0.9497111970748768,
+          "rec_Reconnaissance": 0.5941075514874142,
+          "rec_Shellcode": 0.3492063492063492,
+          "rec_Worms": 0.7045454545454546,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 177
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 317
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 527
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 725
+            }
+          ]
+        },
+        "_buffer_client0": 725,
+        "_total_rows": 55009,
+        "_kb_client0": 118.9453125
+      }
+    },
+    "2800": {
+      "42": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7344774814167031,
+          "macro_f1": 0.38520808924895505,
+          "f1_Normal": 0.861807990685206,
+          "f1_Fuzzers": 0.20618120237087215,
+          "f1_Analysis": 0.006949270326615705,
+          "f1_Backdoors": 0.08512650744856941,
+          "f1_DoS": 0.3280914939242316,
+          "f1_Exploits": 0.6410188937424346,
+          "f1_Generic": 0.9655490201393219,
+          "f1_Reconnaissance": 0.5680624556422995,
+          "f1_Shellcode": 0.14902560183416125,
+          "f1_Worms": 0.040268456375838924,
+          "rec_Normal": 0.8601891891891892,
+          "rec_Fuzzers": 0.1606730451996041,
+          "rec_Analysis": 0.014771048744460856,
+          "rec_Backdoors": 0.30874785591766724,
+          "rec_DoS": 0.3367571533382245,
+          "rec_Exploits": 0.5470715055695293,
+          "rec_Generic": 0.9438291558475969,
+          "rec_Reconnaissance": 0.5723684210526315,
+          "rec_Shellcode": 0.5158730158730159,
+          "rec_Worms": 0.13636363636363635,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 336
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 680
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 971
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1113
+            }
+          ]
+        },
+        "_buffer_client0": 1113,
+        "_total_rows": 55009,
+        "_kb_client0": 182.6015625
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7315260166156536,
+          "macro_f1": 0.3743497334233819,
+          "f1_Normal": 0.8491866996778745,
+          "f1_Fuzzers": 0.16827030655627656,
+          "f1_Analysis": 0.009963467286615742,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.444648216072024,
+          "f1_Exploits": 0.628408846897144,
+          "f1_Generic": 0.953179556264262,
+          "f1_Reconnaissance": 0.5275393419170243,
+          "f1_Shellcode": 0.12420566146735991,
+          "f1_Worms": 0.0380952380952381,
+          "rec_Normal": 0.8621081081081081,
+          "rec_Fuzzers": 0.12405146816232267,
+          "rec_Analysis": 0.022156573116691284,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6522377109317682,
+          "rec_Exploits": 0.5257815307222422,
+          "rec_Generic": 0.9186052673414233,
+          "rec_Reconnaissance": 0.42191075514874143,
+          "rec_Shellcode": 0.5687830687830688,
+          "rec_Worms": 0.4090909090909091,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 560
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 866
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1006
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1074
+            }
+          ]
+        },
+        "_buffer_client0": 1074,
+        "_total_rows": 55009,
+        "_kb_client0": 176.203125
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7383398921440023,
+          "macro_f1": 0.3788979736765376,
+          "f1_Normal": 0.8539623713362098,
+          "f1_Fuzzers": 0.16463689670726206,
+          "f1_Analysis": 0.00888642043876701,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.4324514371099587,
+          "f1_Exploits": 0.6164621505014849,
+          "f1_Generic": 0.9605377276669558,
+          "f1_Reconnaissance": 0.5311616112357359,
+          "f1_Shellcode": 0.18495297805642633,
+          "f1_Worms": 0.03592814371257485,
+          "rec_Normal": 0.8531891891891892,
+          "rec_Fuzzers": 0.12042230287033982,
+          "rec_Analysis": 0.023633677991137372,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6016140865737344,
+          "rec_Exploits": 0.4941609773625584,
+          "rec_Generic": 0.9390069418684754,
+          "rec_Reconnaissance": 0.7788901601830663,
+          "rec_Shellcode": 0.15608465608465608,
+          "rec_Worms": 0.2727272727272727,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 317
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 597
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1017
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1329
+            }
+          ]
+        },
+        "_buffer_client0": 1329,
+        "_total_rows": 55009,
+        "_kb_client0": 218.0390625
+      }
+    },
+    "5600": {
+      "42": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7714618860224457,
+          "macro_f1": 0.4032948087239454,
+          "f1_Normal": 0.8757162718779642,
+          "f1_Fuzzers": 0.1334564156666227,
+          "f1_Analysis": 0.024267782426778243,
+          "f1_Backdoors": 0.1005586592178771,
+          "f1_DoS": 0.4473051836594576,
+          "f1_Exploits": 0.6594725429882508,
+          "f1_Generic": 0.9646337160383248,
+          "f1_Reconnaissance": 0.6035049288061336,
+          "f1_Shellcode": 0.2240325865580448,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.9107567567567567,
+          "rec_Fuzzers": 0.0834708017156054,
+          "rec_Analysis": 0.04283604135893648,
+          "rec_Backdoors": 0.09262435677530018,
+          "rec_DoS": 0.6373196380533138,
+          "rec_Exploits": 0.587405677326626,
+          "rec_Generic": 0.9416565099888718,
+          "rec_Reconnaissance": 0.6304347826086957,
+          "rec_Shellcode": 0.291005291005291,
+          "rec_Worms": 0.0,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 616
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1100
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1488
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1770
+            }
+          ]
+        },
+        "_buffer_client0": 1770,
+        "_total_rows": 55009,
+        "_kb_client0": 290.390625
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7333600544138367,
+          "macro_f1": 0.40540044279385096,
+          "f1_Normal": 0.841947065208316,
+          "f1_Fuzzers": 0.23518810542915072,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.4456033376123235,
+          "f1_Exploits": 0.6637474541751528,
+          "f1_Generic": 0.9559841740850643,
+          "f1_Reconnaissance": 0.5887961859356377,
+          "f1_Shellcode": 0.14729950900163666,
+          "f1_Worms": 0.17543859649122806,
+          "rec_Normal": 0.8176216216216217,
+          "rec_Fuzzers": 0.25833058396568787,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6791391538273417,
+          "rec_Exploits": 0.5855192238591448,
+          "rec_Generic": 0.9218907318107149,
+          "rec_Reconnaissance": 0.4945652173913043,
+          "rec_Shellcode": 0.35714285714285715,
+          "rec_Worms": 0.11363636363636363,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1120
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1706
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1986
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2054
+            }
+          ]
+        },
+        "_buffer_client0": 2054,
+        "_total_rows": 55009,
+        "_kb_client0": 336.984375
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7419593839576349,
+          "macro_f1": 0.37854700385631074,
+          "f1_Normal": 0.8559400798206769,
+          "f1_Fuzzers": 0.1764774178567282,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.44067248625929517,
+          "f1_Exploits": 0.6199413165033494,
+          "f1_Generic": 0.9569665475803832,
+          "f1_Reconnaissance": 0.5222884598273868,
+          "f1_Shellcode": 0.2131837307152875,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.8462702702702702,
+          "rec_Fuzzers": 0.1253711646321346,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6666666666666666,
+          "rec_Exploits": 0.5029644268774703,
+          "rec_Generic": 0.9368342960097504,
+          "rec_Reconnaissance": 0.8395308924485125,
+          "rec_Shellcode": 0.20105820105820105,
+          "rec_Worms": 0.0,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 597
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1157
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1997
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2449
+            }
+          ]
+        },
+        "_buffer_client0": 2449,
+        "_total_rows": 55009,
+        "_kb_client0": 401.7890625
+      }
+    },
+    "unbounded": {
+      "42": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7806928047417772,
+          "macro_f1": 0.3487488026273561,
+          "f1_Normal": 0.88962754192839,
+          "f1_Fuzzers": 0.010957138253303255,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.4309383828357639,
+          "f1_Exploits": 0.6117057380044901,
+          "f1_Generic": 0.9748349388461954,
+          "f1_Reconnaissance": 0.5694242864054185,
+          "f1_Shellcode": 0.0,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.9512162162162162,
+          "rec_Fuzzers": 0.005608709996700759,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.690144289557349,
+          "rec_Exploits": 0.5262306863097377,
+          "rec_Generic": 0.9545334110539982,
+          "rec_Reconnaissance": 0.6733409610983981,
+          "rec_Shellcode": 0.0,
+          "rec_Worms": 0.0,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 2842
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 3865
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 4253
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 5215
+            }
+          ]
+        },
+        "_buffer_client0": 5215,
+        "_total_rows": 55009,
+        "_kb_client0": 855.5859375
+      },
+      "43": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.735388427342953,
+          "macro_f1": 0.3580614870892458,
+          "f1_Normal": 0.8477444617282626,
+          "f1_Fuzzers": 0.18421455938697318,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.43855458818090765,
+          "f1_Exploits": 0.6026884464863025,
+          "f1_Generic": 0.9588017039989006,
+          "f1_Reconnaissance": 0.5486111111111112,
+          "f1_Shellcode": 0.0,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.8542972972972973,
+          "rec_Fuzzers": 0.19828439458924446,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.6960136952800196,
+          "rec_Exploits": 0.4772727272727273,
+          "rec_Generic": 0.9243283344814796,
+          "rec_Reconnaissance": 0.6101258581235698,
+          "rec_Shellcode": 0.0,
+          "rec_Worms": 0.0,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 3666
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 6461
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 7199
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 7267
+            }
+          ]
+        },
+        "_buffer_client0": 7267,
+        "_total_rows": 55009,
+        "_kb_client0": 1192.2421875
+      },
+      "44": {
+        "rehearsal": {
+          "event": "Persistence",
+          "round": 25,
+          "overall": 0.7667856969343633,
+          "macro_f1": 0.3405543638643439,
+          "f1_Normal": 0.8839433369655791,
+          "f1_Fuzzers": 0.011966364812419146,
+          "f1_Analysis": 0.0,
+          "f1_Backdoors": 0.0,
+          "f1_DoS": 0.4358553804464095,
+          "f1_Exploits": 0.5856168343161059,
+          "f1_Generic": 0.9716410214659827,
+          "f1_Reconnaissance": 0.5165207006369427,
+          "f1_Shellcode": 0.0,
+          "f1_Worms": 0.0,
+          "rec_Normal": 0.9317837837837838,
+          "rec_Fuzzers": 0.006103596172880237,
+          "rec_Analysis": 0.0,
+          "rec_Backdoors": 0.0,
+          "rec_DoS": 0.7473709953533871,
+          "rec_Exploits": 0.45499461013295006,
+          "rec_Generic": 0.9486513698267183,
+          "rec_Reconnaissance": 0.7422768878718535,
+          "rec_Shellcode": 0.0,
+          "rec_Worms": 0.0,
+          "detected": [
+            {
+              "concept": "Reconnaissance",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 1528
+            },
+            {
+              "concept": "Exploitation",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 4722
+            },
+            {
+              "concept": "Disruption",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 8123
+            },
+            {
+              "concept": "Persistence",
+              "clients": 10,
+              "channels": {},
+              "memory_client0": 8683
+            }
+          ]
+        },
+        "_buffer_client0": 8683,
+        "_total_rows": 55009,
+        "_kb_client0": 1424.5546875
+      }
+    }
+  }
+}

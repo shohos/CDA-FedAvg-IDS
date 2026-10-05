@@ -1,0 +1,29 @@
+# Datasets: never committed. See the README for where to obtain them.
+CICIDS2017-improved/
+CICIDS2018/
+MachineLearningCVE/
+CSV Files/
+*.csv
+!checkpoints/**/*.csv
+*.pcap
+*.npz
+*.zip
+
+# Model weights (TabFM downloads about 3.3 GB on first use)
+*.pt
+*.pth
+*.safetensors
+
+# Run logs and generated output
+*.log
+*.err
+out/
+tables/
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db

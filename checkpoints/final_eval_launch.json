@@ -1,0 +1,39 @@
+{
+ "protocol_sha256": "7789c53adf529feea40d912955414302480bc003e124ed36153cc19d3d797a7f",
+ "launched": "2026-09-25T23:07:09",
+ "fliids_lr": 0.02,
+ "rule": "best mean of seed-41 FL-IIDS macro-F1 over CICIDS2017 and UNSW-NB15 at alpha 0.5",
+ "means": {
+  "0.01": 0.65505,
+  "0.02": 0.6583,
+  "0.05": 0.6271102120411943
+ },
+ "dev_runs": {
+  "cicids@0.01": {
+   "fliids": 0.9758888573643765,
+   "fliids_ce": 0.9783838793280776,
+   "rehearsal": 0.9769716426487172
+  },
+  "cicids@0.02": {
+   "fliids": 0.9735165051266325,
+   "fliids_ce": 0.9785334687798549
+  },
+  "cicids@0.05": {
+   "fliids": 0.9606842958962345,
+   "fliids_ce": 0.9776817712632112
+  },
+  "unsw@0.01": {
+   "fliids": 0.3342113896976014,
+   "fliids_ce": 0.35001540338071646,
+   "rehearsal": 0.3839483712371438
+  },
+  "unsw@0.02": {
+   "fliids": 0.3430776258936109,
+   "fliids_ce": 0.36926410826658135
+  },
+  "unsw@0.05": {
+   "fliids": 0.2935361281861541
+  }
+ },
+ "note": "cicids@0.05 finished after launch; its mean (0.627) confirms 0.02. UNSW chain was killed at a session pause after 135 arm-runs and resumed from the saved file (resumable runner, completed arms are not rerun)."
+}

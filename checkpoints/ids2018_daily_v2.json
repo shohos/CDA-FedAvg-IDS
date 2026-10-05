@@ -1,0 +1,647 @@
+{
+  "meta": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "alpha": 0.5,
+    "concepts": 7,
+    "rounds": 50,
+    "norm": "layer",
+    "optimizer": "momentum",
+    "lr": 0.01,
+    "detector": "hybrid",
+    "quorum": 5,
+    "max_per_class": 5000
+  },
+  "classes": [
+    "Benign",
+    "BruteForce",
+    "DoS",
+    "DDoS",
+    "WebAttack",
+    "Infiltration",
+    "Bot"
+  ],
+  "42": {
+    "iid_stream": {
+      "round": 50,
+      "overall": 0.8721064496618464,
+      "macro_f1": 0.7965660895850728,
+      "f1_Benign": 0.9039973940155428,
+      "f1_BruteForce": 0.8749386954389407,
+      "f1_DoS": 0.9297541394882087,
+      "f1_DDoS": 0.9934771700953337,
+      "f1_WebAttack": 0.632258064516129,
+      "f1_Infiltration": 0.2573007103393844,
+      "f1_Bot": 0.9842364532019704,
+      "rec_Benign": 0.9711057788442311,
+      "rec_BruteForce": 0.892,
+      "rec_DoS": 0.9265,
+      "rec_DDoS": 0.99,
+      "rec_WebAttack": 0.5297297297297298,
+      "rec_Infiltration": 0.163,
+      "rec_Bot": 0.999
+    },
+    "nonstat": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.5770605377467422,
+      "macro_f1": 0.1674003588593917,
+      "f1_Benign": 0.7951766873220566,
+      "f1_BruteForce": 0.0,
+      "f1_DoS": 0.0,
+      "f1_DDoS": 0.0,
+      "f1_WebAttack": 0.0,
+      "f1_Infiltration": 0.0,
+      "f1_Bot": 0.3766258246936852,
+      "rec_Benign": 0.9494101179764047,
+      "rec_BruteForce": 0.0,
+      "rec_DoS": 0.0,
+      "rec_DDoS": 0.0,
+      "rec_WebAttack": 0.0,
+      "rec_Infiltration": 0.0,
+      "rec_Bot": 0.999
+    },
+    "rehearsal": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.8545664485621598,
+      "macro_f1": 0.7866009689362468,
+      "f1_Benign": 0.8917598103256399,
+      "f1_BruteForce": 0.8887841658812441,
+      "f1_DoS": 0.9339139344262295,
+      "f1_DDoS": 0.993480441323972,
+      "f1_WebAttack": 0.6805970149253732,
+      "f1_Infiltration": 0.33167613636363635,
+      "f1_Bot": 0.7859952793076318,
+      "rec_Benign": 0.9213157368526295,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.9115,
+      "rec_DDoS": 0.9905,
+      "rec_WebAttack": 0.6162162162162163,
+      "rec_Infiltration": 0.2335,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 521
+        },
+        {
+          "concept": "D5-21Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 721
+        },
+        {
+          "concept": "D6-22Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 895
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 998
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1125
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1325
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1449
+        }
+      ]
+    },
+    "cda": {
+      "event": "D10-02Mar-Bot",
+      "round": 45,
+      "overall": 0.8191015560565239,
+      "macro_f1": 0.7624366449662154,
+      "f1_Benign": 0.8635809437796342,
+      "f1_BruteForce": 0.8866948754113775,
+      "f1_DoS": 0.9329910141206675,
+      "f1_DDoS": 0.6570759451321512,
+      "f1_WebAttack": 0.672566371681416,
+      "f1_Infiltration": 0.336016800840042,
+      "f1_Bot": 0.9881305637982196,
+      "rec_Benign": 0.9560087982403519,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.9085,
+      "rec_DDoS": 0.491,
+      "rec_WebAttack": 0.6162162162162163,
+      "rec_Infiltration": 0.24,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {
+            "recon": 10
+          },
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 7,
+          "channels": {
+            "conf": 2,
+            "recon": 5
+          },
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 6,
+          "channels": {
+            "recon": 6
+          },
+          "memory_client0": 521
+        },
+        {
+          "concept": "D6-22Feb-WebAttack",
+          "clients": 5,
+          "channels": {
+            "recon": 5
+          },
+          "memory_client0": 695
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 6,
+          "channels": {
+            "conf": 3,
+            "recon": 3
+          },
+          "memory_client0": 798
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 8,
+          "channels": {
+            "conf": 1,
+            "recon": 7
+          },
+          "memory_client0": 925
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 7,
+          "channels": {
+            "conf": 2,
+            "recon": 5
+          },
+          "memory_client0": 1125
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 7,
+          "channels": {
+            "conf": 3,
+            "recon": 4
+          },
+          "memory_client0": 1249
+        }
+      ]
+    }
+  },
+  "43": {
+    "iid_stream": {
+      "round": 50,
+      "overall": 0.8753505251003464,
+      "macro_f1": 0.8025331074127893,
+      "f1_Benign": 0.9049099990575817,
+      "f1_BruteForce": 0.8879472693032016,
+      "f1_DoS": 0.9337782340862423,
+      "f1_DDoS": 0.993231386312359,
+      "f1_WebAttack": 0.5567765567765568,
+      "f1_Infiltration": 0.3505082369435682,
+      "f1_Bot": 0.9905800694100149,
+      "rec_Benign": 0.9600079984003199,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.9095,
+      "rec_DDoS": 0.9905,
+      "rec_WebAttack": 0.41081081081081083,
+      "rec_Infiltration": 0.25,
+      "rec_Bot": 0.999
+    },
+    "nonstat": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.5767856160994117,
+      "macro_f1": 0.16548279645357342,
+      "f1_Benign": 0.8084671408492695,
+      "f1_BruteForce": 0.0,
+      "f1_DoS": 0.0,
+      "f1_DDoS": 0.0,
+      "f1_WebAttack": 0.0,
+      "f1_Infiltration": 0.0,
+      "f1_Bot": 0.3499124343257443,
+      "rec_Benign": 0.9489102179564087,
+      "rec_BruteForce": 0.0,
+      "rec_DoS": 0.0,
+      "rec_DDoS": 0.0,
+      "rec_WebAttack": 0.0,
+      "rec_Infiltration": 0.0,
+      "rec_Bot": 0.999
+    },
+    "rehearsal": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.8737009952163634,
+      "macro_f1": 0.8133871424779918,
+      "f1_Benign": 0.9033024471370872,
+      "f1_BruteForce": 0.8896226415094339,
+      "f1_DoS": 0.9341869398207426,
+      "f1_DDoS": 0.9917231000752446,
+      "f1_WebAttack": 0.631578947368421,
+      "f1_Infiltration": 0.36388415672913116,
+      "f1_Bot": 0.9794117647058823,
+      "rec_Benign": 0.9503099380123975,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.912,
+      "rec_DDoS": 0.9885,
+      "rec_WebAttack": 0.5837837837837838,
+      "rec_Infiltration": 0.267,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 521
+        },
+        {
+          "concept": "D5-21Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 721
+        },
+        {
+          "concept": "D6-22Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 895
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 998
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1125
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1325
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1449
+        }
+      ]
+    },
+    "cda": {
+      "event": "D10-02Mar-Bot",
+      "round": 45,
+      "overall": 0.8677077033045582,
+      "macro_f1": 0.8024212108934689,
+      "f1_Benign": 0.9000668130189939,
+      "f1_BruteForce": 0.8861596598960794,
+      "f1_DoS": 0.9335378323108384,
+      "f1_DDoS": 0.9863081901916854,
+      "f1_WebAttack": 0.6410256410256411,
+      "f1_Infiltration": 0.35122965015587115,
+      "f1_Bot": 0.9186206896551724,
+      "rec_Benign": 0.9428114377124575,
+      "rec_BruteForce": 0.938,
+      "rec_DoS": 0.913,
+      "rec_DDoS": 0.9905,
+      "rec_WebAttack": 0.5405405405405406,
+      "rec_Infiltration": 0.2535,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {
+            "recon": 10
+          },
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 7,
+          "channels": {
+            "recon": 7
+          },
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 5,
+          "channels": {
+            "recon": 5
+          },
+          "memory_client0": 521
+        },
+        {
+          "concept": "D5-21Feb-DDoS",
+          "clients": 7,
+          "channels": {
+            "conf": 3,
+            "recon": 4
+          },
+          "memory_client0": 721
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 6,
+          "channels": {
+            "recon": 6
+          },
+          "memory_client0": 824
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 7,
+          "channels": {
+            "recon": 7
+          },
+          "memory_client0": 951
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 6,
+          "channels": {
+            "conf": 3,
+            "recon": 3
+          },
+          "memory_client0": 1151
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 7,
+          "channels": {
+            "conf": 1,
+            "recon": 6
+          },
+          "memory_client0": 1275
+        }
+      ]
+    }
+  },
+  "44": {
+    "iid_stream": {
+      "round": 50,
+      "overall": 0.8689173585528125,
+      "macro_f1": 0.7890986935456513,
+      "f1_Benign": 0.9058174335952114,
+      "f1_BruteForce": 0.7870813397129187,
+      "f1_DoS": 0.9139316043148956,
+      "f1_DDoS": 0.9907011812013069,
+      "f1_WebAttack": 0.6363636363636364,
+      "f1_Infiltration": 0.3026415094339623,
+      "f1_Bot": 0.9871541501976284,
+      "rec_Benign": 0.9683063387322536,
+      "rec_BruteForce": 0.658,
+      "rec_DoS": 0.9955,
+      "rec_DDoS": 0.9855,
+      "rec_WebAttack": 0.5297297297297298,
+      "rec_Infiltration": 0.2005,
+      "rec_Bot": 0.999
+    },
+    "nonstat": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.5765656787815473,
+      "macro_f1": 0.16586921475211938,
+      "f1_Benign": 0.8044261669563743,
+      "f1_BruteForce": 0.0,
+      "f1_DoS": 0.0,
+      "f1_DDoS": 0.0,
+      "f1_WebAttack": 0.0,
+      "f1_Infiltration": 0.0,
+      "f1_Bot": 0.3566583363084613,
+      "rec_Benign": 0.948510297940412,
+      "rec_BruteForce": 0.0,
+      "rec_DoS": 0.0,
+      "rec_DDoS": 0.0,
+      "rec_WebAttack": 0.0,
+      "rec_Infiltration": 0.0,
+      "rec_Bot": 0.999
+    },
+    "rehearsal": {
+      "event": "D10-02Mar-Bot",
+      "round": 50,
+      "overall": 0.8744707758288888,
+      "macro_f1": 0.8146289122963472,
+      "f1_Benign": 0.9044874822862541,
+      "f1_BruteForce": 0.8875294117647059,
+      "f1_DoS": 0.9348717948717948,
+      "f1_DDoS": 0.9942514371407148,
+      "f1_WebAttack": 0.6705202312138728,
+      "f1_Infiltration": 0.328923846978906,
+      "f1_Bot": 0.9818181818181818,
+      "rec_Benign": 0.9572085582883423,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.9115,
+      "rec_DDoS": 0.9945,
+      "rec_WebAttack": 0.6270270270270271,
+      "rec_Infiltration": 0.23,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 521
+        },
+        {
+          "concept": "D5-21Feb-DDoS",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 721
+        },
+        {
+          "concept": "D6-22Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 895
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 998
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1125
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1325
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 10,
+          "channels": {},
+          "memory_client0": 1449
+        }
+      ]
+    },
+    "cda": {
+      "event": "D10-02Mar-Bot",
+      "round": 45,
+      "overall": 0.8727662616154396,
+      "macro_f1": 0.812051210315761,
+      "f1_Benign": 0.9025188558417533,
+      "f1_BruteForce": 0.8875294117647059,
+      "f1_DoS": 0.9348717948717948,
+      "f1_DDoS": 0.9932381667918858,
+      "f1_WebAttack": 0.6369426751592356,
+      "f1_Infiltration": 0.35080507022953067,
+      "f1_Bot": 0.9784524975514202,
+      "rec_Benign": 0.9511097780443911,
+      "rec_BruteForce": 0.943,
+      "rec_DoS": 0.9115,
+      "rec_DDoS": 0.9915,
+      "rec_WebAttack": 0.5405405405405406,
+      "rec_Infiltration": 0.256,
+      "rec_Bot": 0.999,
+      "detected": [
+        {
+          "concept": "D2-15Feb-DoS",
+          "clients": 10,
+          "channels": {
+            "recon": 10
+          },
+          "memory_client0": 184
+        },
+        {
+          "concept": "D3-16Feb-DoS",
+          "clients": 6,
+          "channels": {
+            "recon": 6
+          },
+          "memory_client0": 321
+        },
+        {
+          "concept": "D4-20Feb-DDoS",
+          "clients": 6,
+          "channels": {
+            "recon": 6
+          },
+          "memory_client0": 521
+        },
+        {
+          "concept": "D5-21Feb-DDoS",
+          "clients": 5,
+          "channels": {
+            "recon": 5
+          },
+          "memory_client0": 721
+        },
+        {
+          "concept": "D7-23Feb-WebAttack",
+          "clients": 6,
+          "channels": {
+            "recon": 6
+          },
+          "memory_client0": 824
+        },
+        {
+          "concept": "D8-28Feb-Infiltration",
+          "clients": 8,
+          "channels": {
+            "conf": 2,
+            "recon": 6
+          },
+          "memory_client0": 951
+        },
+        {
+          "concept": "D9-01Mar-Infiltration",
+          "clients": 7,
+          "channels": {
+            "conf": 2,
+            "recon": 5
+          },
+          "memory_client0": 1151
+        },
+        {
+          "concept": "D10-02Mar-Bot",
+          "clients": 7,
+          "channels": {
+            "conf": 2,
+            "recon": 5
+          },
+          "memory_client0": 1275
+        }
+      ]
+    }
+  }
+}

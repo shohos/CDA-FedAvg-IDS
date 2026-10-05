@@ -1,0 +1,36 @@
+{
+  "code_sha256": {
+    "final_eval.py": "0269711080ec21ed36f5eb91aa202630a1af0a5f95750cc24492f5231bdce30b",
+    "ids_loader.py": "2e33e4ab786212c432b80ae2d3176cb95838cc90c3292268a33e7dc7d2b6327f",
+    "unsw_loader.py": "d8dbf579cc192228ecb0b84ad1f9b49ef5d304d78cff4a2c11051296229f30d3",
+    "ids2018_loader.py": "75da9e7e63668755a151b14326fe351f3324565855b8fe19e6d64d2251c82ec9",
+    "ids_cda_pipeline.py": "665630ac8f827f71c8cfeb8ce02c1511cc98e96f9f23556833c5343b98d7b8ae",
+    "unsw_cda_pipeline.py": "c2887b1b5379add32ef8a687c9dfc27f4f1db7a2a42c579a302c37d33127f79e",
+    "drift_channels.py": "69bdcbbbf9e3fa65099d6d19015abede00b3e92cd2aa5c7968d200559fc43f6e",
+    "fl_iids.py": "1db724fbaa7c18d355d444620058a23a7f23b398558debe3ee1156dc8b2ed944",
+    "memory_bound.py": "bd82e238765c149c2dc0311d78375252979d294c270b75da8499cf4035e3e39e",
+    "aggregators.py": "572c85eda880367426f420949f0afedcff70e6d4892288194d6c8d494d25ed76"
+  },
+  "runs": [
+    {
+      "arm": "rehearsal",
+      "saved_macro_f1": 0.9242194058984067,
+      "rerun_macro_f1": 0.9242194058984067,
+      "delta": 0.0,
+      "history_exact": true,
+      "forward_exact": true,
+      "grad_steps_exact": true,
+      "seconds": 66.4
+    },
+    {
+      "arm": "cda_q1",
+      "saved_macro_f1": 0.9242194058984067,
+      "rerun_macro_f1": 0.9242194058984067,
+      "delta": 0.0,
+      "history_exact": true,
+      "forward_exact": true,
+      "grad_steps_exact": true,
+      "seconds": 67.1
+    }
+  ]
+}

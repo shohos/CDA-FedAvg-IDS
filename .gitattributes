@@ -1,0 +1,3 @@
+# Store every file byte for byte, so that the SHA-256 fingerprints recorded in the
+# result files can be checked against a fresh clone (verify_fingerprints.py).
+* -text

@@ -1,0 +1,12 @@
+| cicids a=0.1 fedprox - fedavg | -0.000 | 0.001 | 0.001 |
+| cicids a=100 fedprox - fedavg | +0.001 | 0.002 | 0.002 |
+| cicids a=0.1 scaffold - fedavg | -0.372 | 0.101 | 0.100 |
+| cicids a=100 scaffold - fedavg | -0.009 | 0.002 | 0.002 |
+| cicids a=0.1 median - fedavg | -0.188 | 0.047 | 0.047 |
+| cicids a=100 median - fedavg | +0.000 | 0.005 | 0.005 |
+| unsw a=0.1 fedprox - fedavg | -0.000 | 0.002 | 0.002 |
+| unsw a=100 fedprox - fedavg | -0.001 | 0.001 | 0.001 |
+| unsw a=0.1 scaffold - fedavg | -0.059 | 0.076 | 0.076 |
+| unsw a=100 scaffold - fedavg | -0.010 | 0.004 | 0.004 |
+| unsw a=0.1 median - fedavg | -0.051 | 0.052 | 0.052 |
+| unsw a=100 median - fedavg | +0.011 | 0.021 | 0.021 |

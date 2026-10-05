@@ -1,0 +1,183 @@
+{
+  "scope": "exploratory paired main-stream integration; not confirmation",
+  "cells": [
+    {
+      "dataset": "cicids",
+      "label": "CICIDS2017 / 0.5",
+      "n": 5,
+      "raw_rehearsal": 0.9076921772971439,
+      "raw_rehearsal_sd": 0.019087834018768905,
+      "raw_rehearsal_forgetting": 0.08903838232353528,
+      "raw_rehearsal_forward": 0.3040846784886796,
+      "raw_rehearsal_lost": 0,
+      "raw_cda": 0.8788270831997278,
+      "raw_cda_sd": 0.06435762118958421,
+      "raw_cda_forgetting": 0.08910832833433313,
+      "raw_cda_forward": 0.3041482085763092,
+      "raw_cda_lost": 0,
+      "tabfm_rehearsal": 0.9733621504489077,
+      "tabfm_rehearsal_sd": 0.0076877922388831,
+      "tabfm_rehearsal_forgetting": 0.011338692261547689,
+      "tabfm_rehearsal_forward": 0.3037305228570029,
+      "tabfm_rehearsal_lost": 0,
+      "tabfm_cda": 0.8857238527088175,
+      "tabfm_cda_sd": 0.08326006697355214,
+      "tabfm_cda_forgetting": 0.013228064387122578,
+      "tabfm_cda_forward": 0.3093658041973986,
+      "tabfm_cda_lost": 0,
+      "delta_rehearsal": 0.06566997315176382,
+      "delta_rehearsal_ci": [
+        0.045266754527860956,
+        0.08607319177566668
+      ],
+      "delta_rehearsal_positive": 5,
+      "delta_cda": 0.006896769509089707,
+      "delta_cda_ci": [
+        -0.08455622864055544,
+        0.09834976765873486
+      ],
+      "delta_cda_positive": 3,
+      "feature_seconds_range": [
+        136.90062609998859,
+        254.9093842000002
+      ],
+      "feature_peak_cuda_bytes": 436162560,
+      "context_broadcast_bytes": [
+        184320
+      ]
+    },
+    {
+      "dataset": "unsw",
+      "label": "UNSW-NB15 / 0.5",
+      "n": 5,
+      "raw_rehearsal": 0.3146314285134456,
+      "raw_rehearsal_sd": 0.03550446140607083,
+      "raw_rehearsal_forgetting": 0.3420728784347916,
+      "raw_rehearsal_forward": 0.2501755468516024,
+      "raw_rehearsal_lost": 3.2,
+      "raw_cda": 0.3228900350374949,
+      "raw_cda_sd": 0.02713774956107236,
+      "raw_cda_forgetting": 0.31943795812667275,
+      "raw_cda_forward": 0.2501755468516024,
+      "raw_cda_lost": 3,
+      "tabfm_rehearsal": 0.38243455070165316,
+      "tabfm_rehearsal_sd": 0.021067631215167314,
+      "tabfm_rehearsal_forgetting": 0.24192716401274791,
+      "tabfm_rehearsal_forward": 0.2589776909008509,
+      "tabfm_rehearsal_lost": 2,
+      "tabfm_cda": 0.37703494265982396,
+      "tabfm_cda_sd": 0.022242888835694235,
+      "tabfm_cda_forgetting": 0.23760914085541623,
+      "tabfm_cda_forward": 0.2589776909008509,
+      "tabfm_cda_lost": 2,
+      "delta_rehearsal": 0.06780312218820753,
+      "delta_rehearsal_ci": [
+        0.02200990191350436,
+        0.1135963424629107
+      ],
+      "delta_rehearsal_positive": 5,
+      "delta_cda": 0.054144907622329055,
+      "delta_cda_ci": [
+        0.02317426177602889,
+        0.08511555346862923
+      ],
+      "delta_cda_positive": 5,
+      "feature_seconds_range": [
+        315.5914664999873,
+        705.6594144999981
+      ],
+      "feature_peak_cuda_bytes": 309452288,
+      "context_broadcast_bytes": [
+        101376
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "dataset": "unsw",
+      "seed": 42,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 4
+    },
+    {
+      "dataset": "unsw",
+      "seed": 43,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    },
+    {
+      "dataset": "unsw",
+      "seed": 44,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    },
+    {
+      "dataset": "unsw",
+      "seed": 45,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 3
+    },
+    {
+      "dataset": "unsw",
+      "seed": 46,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 3
+    },
+    {
+      "dataset": "cicids",
+      "seed": 42,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    },
+    {
+      "dataset": "cicids",
+      "seed": 43,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    },
+    {
+      "dataset": "cicids",
+      "seed": 44,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    },
+    {
+      "dataset": "cicids",
+      "seed": 45,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 1
+    },
+    {
+      "dataset": "cicids",
+      "seed": 46,
+      "complete_arms": 4,
+      "invariance_and_metrics": true,
+      "rehearsal_exposure_matched": true,
+      "context_equal_feature_vectors_in_test": 0
+    }
+  ],
+  "result_sha256": {
+    "tabfm_dev_unsw_42_a05.json": "d0b3b8433dea39dd0fc8cdd2e42b5a5719f4f8bcbe002c72472fcb2a9ca7e6e9",
+    "tabfm_dev_unsw_43_46_a05.json": "b8fd863b9f57d8587773be76d43807eeaefe67873b5c4470ba72e90aa3eb6ea7",
+    "tabfm_dev_cicids_42_46_a05.json": "11da6d3360690916e0aa342c431fbfc18349854d7cc9dc2201d1de070df1cd62"
+  },
+  "slide_conclusion": "Always-adapt retention rose in all five seeds on both datasets. CDA gains were consistent on UNSW, but uncertain on CICIDS. These are development results."
+}

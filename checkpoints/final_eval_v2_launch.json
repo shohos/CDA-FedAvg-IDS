@@ -1,0 +1,110 @@
+{
+ "protocol": "FINAL_EVAL_PROTOCOL_v2.md",
+ "protocol_sha256": "e12a27820f74d57729d76ff00b192e372646b82f2238f31d9711904bb15de50a",
+ "frozen_at": "2026-09-26 23:20:11",
+ "code_sha256": {
+  "final_eval.py": "6abe712a3b0c3179eac415fc3de3613a77bc389b71ef59c42e7bfa00b6df3e7f",
+  "ids_loader.py": "2e33e4ab786212c432b80ae2d3176cb95838cc90c3292268a33e7dc7d2b6327f",
+  "unsw_loader.py": "d8dbf579cc192228ecb0b84ad1f9b49ef5d304d78cff4a2c11051296229f30d3",
+  "ids2018_loader.py": "75da9e7e63668755a151b14326fe351f3324565855b8fe19e6d64d2251c82ec9",
+  "ids_cda_pipeline.py": "52f9360fa4d77a7ffc80f108b41e3d3094fbf36cb06f597eb31615d10054e817",
+  "unsw_cda_pipeline.py": "d4c7b941d45658bfaee392443de4c99194c844434e418ffc4a71a48591a7f313",
+  "drift_channels.py": "69bdcbbbf9e3fa65099d6d19015abede00b3e92cd2aa5c7968d200559fc43f6e",
+  "fl_iids.py": "1db724fbaa7c18d355d444620058a23a7f23b398558debe3ee1156dc8b2ed944",
+  "memory_bound.py": "bd82e238765c149c2dc0311d78375252979d294c270b75da8499cf4035e3e39e",
+  "analyse_final_eval.py": "108c8e5238247279ec596f3a5f66fe35b84db0668893f1f1a0e1d4b97d19ac7c"
+ },
+ "seeds_checked_unused": [
+  600,
+  601,
+  602,
+  603,
+  604,
+  605,
+  606,
+  607,
+  608,
+  609
+ ],
+ "runs": {
+  "R1": {
+   "seeds": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+   ],
+   "out_dir": "checkpoints/final_v2/"
+  },
+  "R2": {
+   "seeds": [
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609
+   ],
+   "out_dir": "checkpoints/final_v2/"
+  }
+ },
+ "command": "final_eval.py --impl repaired --fliids-lr 0.02 --arms <12 arms> (cicids, unsw: alphas 0.1,0.5,1.0,100; ids2018: 0.5)",
+ "deviations": [
+  {
+   "when": "2026-09-27 12:40",
+   "run": "R2",
+   "where": "unsw alpha=100 seed=608, arm fliids_ce_ls (in progress, not saved)",
+   "what": "CUDA error: an illegal memory access, while another GPU workload had been started on the same machine (not a code error; ~950 earlier runs completed with the same code)",
+   "action": "resumed unchanged with run_final_v2.sh R2; the resume check confirmed identical settings and code; each arm reseeds itself, so resumed arms are unaffected",
+   "resume_check": "passed; R2 continued from unsw alpha=100 seed=608"
+  },
+  {
+   "when": "2026-09-27 12:56",
+   "run": "R1 and R2",
+   "type": "scheduling only (no code or setting change)",
+   "what": "At the user's request, to use more of the GPU, the CSE-CIC-IDS2018 part of each run was split by seed into two processes: R1 47-51 and 52-56, R2 600-604 and 605-609. The queue processes were stopped before they had written any 2018 result. The halves are merged by merge_v2_parts.py, which checks identical settings/code and no overlap.",
+   "verification": "The crashed UNSW cell (alpha=100, seed 608) is re-run independently into final_v2/verify/ and compared bit for bit with R2_unsw.json."
+  },
+  {
+   "when": "2026-09-27 13:10",
+   "run": "verification job only (not R1/R2)",
+   "what": "The same CUDA illegal-memory-access fault ended the crash-check job. Another GPU workload had again been started on the machine by mistake (user confirmation); it was not visible in the earlier process check. The fault is process-local; the four 2018 jobs continued.",
+   "check": "The 6 arms it had completed (iid_stream, nonstat, rehearsal, cda, cda_q1, fliids for UNSW alpha=100 seed 608) are bit-identical to R2_unsw.json in every field except run time. Resumed for the remaining 6 arms."
+  },
+  {
+   "when": "2026-09-27 17:21",
+   "type": "analysis script",
+   "what": "analyse_final_eval.py left primary contrast P4 (cost(F)-cost(B2), cost(Fn)-cost(B2) at alpha 0.1, CICIDS/UNSW) out of the Holm family that the protocol declares. Corrected to include it; no data, run or other quantity changed.",
+   "analyse_final_eval_sha256_after": "3b5f57109272a6be440e86404f920280c1e05858d0176bc6772c5c857f2d2d32"
+  }
+ ],
+ "crash_verification": {
+  "when": "2026-09-27 13:22",
+  "cell": "unsw alpha=100 seed=608 (R2, where the first fault struck)",
+  "file": "final_v2/verify/crash_cell_unsw_a100_s608.json",
+  "result": "all 12 arms bit-identical to R2_unsw.json in every field except run time"
+ },
+ "completed": "2026-09-27 17:30",
+ "result_files": {
+  "R1": [
+   "final_v2/R1_cicids.json",
+   "final_v2/R1_unsw.json",
+   "final_v2/R1_ids2018.json"
+  ],
+  "R2": [
+   "final_v2/R2_cicids.json",
+   "final_v2/R2_unsw.json",
+   "final_v2/R2_ids2018.json"
+  ]
+ }
+}

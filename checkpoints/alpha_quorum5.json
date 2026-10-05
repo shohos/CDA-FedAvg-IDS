@@ -1,0 +1,3066 @@
+{
+  "meta": {
+    "alphas": [
+      0.1,
+      0.5,
+      1.0,
+      100.0
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "norms": [
+      "layer"
+    ],
+    "configs": [
+      "nonstat",
+      "rehearsal",
+      "cda"
+    ],
+    "detector": "hybrid",
+    "max_per_class": 5000,
+    "n_clients": 10
+  },
+  "classes": {
+    "cicids": [
+      "BENIGN",
+      "DoS",
+      "DDoS",
+      "PortScan",
+      "BruteForce",
+      "WebAttack",
+      "Bot"
+    ],
+    "unsw": [
+      "Normal",
+      "Fuzzers",
+      "Analysis",
+      "Backdoors",
+      "DoS",
+      "Exploits",
+      "Generic",
+      "Reconnaissance",
+      "Shellcode",
+      "Worms"
+    ]
+  },
+  "layer": {
+    "cicids": {
+      "0.1": {
+        "42": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6427263479145473,
+            "macro_f1": 0.29124865751559154,
+            "f1_BENIGN": 0.8729292929292929,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6286614173228346,
+            "f1_PortScan": 0.5321247667288723,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.005025125628140704,
+            "rec_BENIGN": 0.8642,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.998,
+            "rec_PortScan": 0.998,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.0025380710659898475
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8676500508646999,
+            "macro_f1": 0.8054252750619293,
+            "f1_BENIGN": 0.9199270220960876,
+            "f1_DoS": 0.8400569530137636,
+            "f1_DDoS": 0.8014059753954306,
+            "f1_PortScan": 0.8231190832087693,
+            "f1_BruteForce": 0.9270106927010693,
+            "f1_WebAttack": 0.8632768361581921,
+            "f1_Bot": 0.4631803628601921,
+            "rec_BENIGN": 0.9076,
+            "rec_DoS": 0.885,
+            "rec_DDoS": 0.684,
+            "rec_PortScan": 0.826,
+            "rec_BruteForce": 0.997,
+            "rec_WebAttack": 0.8761467889908257,
+            "rec_Bot": 0.550761421319797,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 114
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 114
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 114
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 115
+              }
+            ]
+          },
+          "cda": {
+            "event": "Monday_init",
+            "round": 5,
+            "overall": 0.508646998982706,
+            "macro_f1": 0.0963298333493883,
+            "f1_BENIGN": 0.6743088334457181,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.0,
+            "f1_PortScan": 0.0,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.0,
+            "rec_BENIGN": 1.0,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.0,
+            "rec_PortScan": 0.0,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.0,
+            "detected": []
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6806714140386572,
+            "macro_f1": 0.41416210736952536,
+            "f1_BENIGN": 0.8078817733990148,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.7179302910528207,
+            "f1_PortScan": 0.77000777000777,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.6033149171270719,
+            "rec_BENIGN": 0.8856,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.999,
+            "rec_PortScan": 0.991,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.6928934010152284
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8435401831129197,
+            "macro_f1": 0.8012943802113526,
+            "f1_BENIGN": 0.8926409684612934,
+            "f1_DoS": 0.8292682926829268,
+            "f1_DDoS": 0.8838652482269503,
+            "f1_PortScan": 0.7823376623376623,
+            "f1_BruteForce": 0.8869135802469136,
+            "f1_WebAttack": 0.9012775842044135,
+            "f1_Bot": 0.43275732531930877,
+            "rec_BENIGN": 0.8406,
+            "rec_DoS": 0.765,
+            "rec_DDoS": 0.997,
+            "rec_PortScan": 0.753,
+            "rec_BruteForce": 0.898,
+            "rec_WebAttack": 0.8899082568807339,
+            "rec_Bot": 0.7309644670050761,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 0
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 91
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 107
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 244
+              }
+            ]
+          },
+          "cda": {
+            "event": "Monday_init",
+            "round": 5,
+            "overall": 0.508646998982706,
+            "macro_f1": 0.0963298333493883,
+            "f1_BENIGN": 0.6743088334457181,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.0,
+            "f1_PortScan": 0.0,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.0,
+            "rec_BENIGN": 1.0,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.0,
+            "rec_PortScan": 0.0,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.0,
+            "detected": []
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.5619532044760935,
+            "macro_f1": 0.3251286678955369,
+            "f1_BENIGN": 0.7587331159757802,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.5651313930488838,
+            "f1_PortScan": 0.7157818707114482,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.23625429553264604,
+            "rec_BENIGN": 0.6516,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 1.0,
+            "rec_PortScan": 0.991,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.6979695431472082
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8222787385554425,
+            "macro_f1": 0.6966049219194972,
+            "f1_BENIGN": 0.8986038927952715,
+            "f1_DoS": 0.6545313710302091,
+            "f1_DDoS": 0.62109375,
+            "f1_PortScan": 0.8656583629893239,
+            "f1_BruteForce": 0.8870895186684661,
+            "f1_WebAttack": 0.900117508813161,
+            "f1_Bot": 0.04914004914004914,
+            "rec_BENIGN": 0.8818,
+            "rec_DoS": 0.845,
+            "rec_DDoS": 0.477,
+            "rec_PortScan": 0.973,
+            "rec_BruteForce": 0.986,
+            "rec_WebAttack": 0.8784403669724771,
+            "rec_Bot": 0.025380710659898477,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 270
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 370
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 473
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 473
+              }
+            ]
+          },
+          "cda": {
+            "event": "Wednesday",
+            "round": 10,
+            "overall": 0.5695829094608342,
+            "macro_f1": 0.19120245874638384,
+            "f1_BENIGN": 0.7270375161707633,
+            "f1_DoS": 0.6113796950539234,
+            "f1_DDoS": 0.0,
+            "f1_PortScan": 0.0,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.0,
+            "rec_BENIGN": 0.9554,
+            "rec_DoS": 0.822,
+            "rec_DDoS": 0.0,
+            "rec_PortScan": 0.0,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.0,
+            "detected": [
+              {
+                "concept": "Wednesday",
+                "clients": 6,
+                "channels": {
+                  "recon": 6
+                },
+                "memory_client0": 200
+              }
+            ]
+          }
+        }
+      },
+      "0.5": {
+        "42": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6852492370295016,
+            "macro_f1": 0.38698376887874436,
+            "f1_BENIGN": 0.8453721505081022,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6682289922999666,
+            "f1_PortScan": 0.7133118048080374,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.4819734345351044,
+            "rec_BENIGN": 0.9234,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.998,
+            "rec_PortScan": 0.994,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.3223350253807107
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8820956256358088,
+            "macro_f1": 0.8336318600200554,
+            "f1_BENIGN": 0.9180293279881844,
+            "f1_DoS": 0.8459556929417826,
+            "f1_DDoS": 0.8712505768343332,
+            "f1_PortScan": 0.8768656716417911,
+            "f1_BruteForce": 0.930276087973795,
+            "f1_WebAttack": 0.8678815489749431,
+            "f1_Bot": 0.5251641137855579,
+            "rec_BENIGN": 0.8702,
+            "rec_DoS": 0.821,
+            "rec_DDoS": 0.944,
+            "rec_PortScan": 0.94,
+            "rec_BruteForce": 0.994,
+            "rec_WebAttack": 0.8738532110091743,
+            "rec_Bot": 0.6091370558375635,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 228
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 428
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 568
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 807
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 20,
+            "overall": 0.8435401831129197,
+            "macro_f1": 0.7039979854307644,
+            "f1_BENIGN": 0.8820773930753564,
+            "f1_DoS": 0.8429752066115702,
+            "f1_DDoS": 0.8720292504570384,
+            "f1_PortScan": 0.8670680870773506,
+            "f1_BruteForce": 0.9195189639222942,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.5443169968717414,
+            "rec_BENIGN": 0.8662,
+            "rec_DoS": 0.816,
+            "rec_DDoS": 0.954,
+            "rec_PortScan": 0.936,
+            "rec_BruteForce": 0.994,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.6624365482233503,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 7,
+                "channels": {
+                  "recon": 7
+                },
+                "memory_client0": 228
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 428
+              },
+              {
+                "concept": "Friday",
+                "clients": 9,
+                "channels": {
+                  "conf": 1,
+                  "recon": 7,
+                  "both": 1
+                },
+                "memory_client0": 667
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6542217700915565,
+            "macro_f1": 0.35538284236746953,
+            "f1_BENIGN": 0.8578060349177515,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6591883866710656,
+            "f1_PortScan": 0.6153846153846154,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.3553008595988539,
+            "rec_BENIGN": 0.85,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.999,
+            "rec_PortScan": 0.996,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.4720812182741117
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8790437436419125,
+            "macro_f1": 0.8413916580522429,
+            "f1_BENIGN": 0.9081522908152291,
+            "f1_DoS": 0.8940825459970164,
+            "f1_DDoS": 0.911873840445269,
+            "f1_PortScan": 0.8483965014577259,
+            "f1_BruteForce": 0.9255813953488372,
+            "f1_WebAttack": 0.9020979020979021,
+            "f1_Bot": 0.4995571302037201,
+            "rec_BENIGN": 0.8444,
+            "rec_DoS": 0.899,
+            "rec_DDoS": 0.983,
+            "rec_PortScan": 0.873,
+            "rec_BruteForce": 0.995,
+            "rec_WebAttack": 0.8876146788990825,
+            "rec_Bot": 0.7157360406091371,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 180
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 260
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 389
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 497
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8814852492370295,
+            "macro_f1": 0.8534602340693233,
+            "f1_BENIGN": 0.9080521720383745,
+            "f1_DoS": 0.8964497041420119,
+            "f1_DDoS": 0.9110287303058388,
+            "f1_PortScan": 0.8489361702127659,
+            "f1_BruteForce": 0.9273066169617894,
+            "f1_WebAttack": 0.9020979020979021,
+            "f1_Bot": 0.5803503427265804,
+            "rec_BENIGN": 0.8424,
+            "rec_DoS": 0.909,
+            "rec_DDoS": 0.983,
+            "rec_PortScan": 0.798,
+            "rec_BruteForce": 0.995,
+            "rec_WebAttack": 0.8876146788990825,
+            "rec_Bot": 0.9670050761421319,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 180
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 260
+              },
+              {
+                "concept": "Thursday",
+                "clients": 5,
+                "channels": {
+                  "recon": 5
+                },
+                "memory_client0": 389
+              },
+              {
+                "concept": "Friday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 497
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6548321464903357,
+            "macro_f1": 0.30015217380041725,
+            "f1_BENIGN": 0.8748646253815103,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6367112810707457,
+            "f1_PortScan": 0.5817223198594025,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.007766990291262136,
+            "rec_BENIGN": 0.8886,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.999,
+            "rec_PortScan": 0.993,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.005076142131979695
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8459816887080366,
+            "macro_f1": 0.7958966493031865,
+            "f1_BENIGN": 0.8869602950748535,
+            "f1_DoS": 0.8131506849315069,
+            "f1_DDoS": 0.8216857263871241,
+            "f1_PortScan": 0.8626347866854196,
+            "f1_BruteForce": 0.8851139919535091,
+            "f1_WebAttack": 0.8665931642778391,
+            "f1_Bot": 0.4351378958120531,
+            "rec_BENIGN": 0.8176,
+            "rec_DoS": 0.742,
+            "rec_DDoS": 0.97,
+            "rec_PortScan": 0.92,
+            "rec_BruteForce": 0.99,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.5406091370558376,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 202
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 402
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 503
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 810
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8471007121057986,
+            "macro_f1": 0.7971818226633752,
+            "f1_BENIGN": 0.8875122269318553,
+            "f1_DoS": 0.8209843158464034,
+            "f1_DDoS": 0.820838627700127,
+            "f1_PortScan": 0.8646616541353384,
+            "f1_BruteForce": 0.8847184986595175,
+            "f1_WebAttack": 0.8637362637362638,
+            "f1_Bot": 0.43782117163412126,
+            "rec_BENIGN": 0.8166,
+            "rec_DoS": 0.759,
+            "rec_DDoS": 0.969,
+            "rec_PortScan": 0.92,
+            "rec_BruteForce": 0.99,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.5406091370558376,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 202
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 402
+              },
+              {
+                "concept": "Thursday",
+                "clients": 5,
+                "channels": {
+                  "recon": 5
+                },
+                "memory_client0": 503
+              },
+              {
+                "concept": "Friday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 810
+              }
+            ]
+          }
+        }
+      },
+      "1.0": {
+        "42": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6685656154628687,
+            "macro_f1": 0.3517163642257611,
+            "f1_BENIGN": 0.8845233346629437,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6449111470113086,
+            "f1_PortScan": 0.7089871611982882,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.2235929067077872,
+            "rec_BENIGN": 0.887,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.998,
+            "rec_PortScan": 0.994,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.3680203045685279
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8759918616480162,
+            "macro_f1": 0.8329725636480109,
+            "f1_BENIGN": 0.9104381443298969,
+            "f1_DoS": 0.8653846153846154,
+            "f1_DDoS": 0.874942739349519,
+            "f1_PortScan": 0.8726415094339622,
+            "f1_BruteForce": 0.9227871939736346,
+            "f1_WebAttack": 0.8681818181818182,
+            "f1_Bot": 0.5164319248826291,
+            "rec_BENIGN": 0.8478,
+            "rec_DoS": 0.855,
+            "rec_DDoS": 0.955,
+            "rec_PortScan": 0.925,
+            "rec_BruteForce": 0.98,
+            "rec_WebAttack": 0.8761467889908257,
+            "rec_Bot": 0.6979695431472082,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 220
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 420
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 552
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 862
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8706002034587996,
+            "macro_f1": 0.8279620068053214,
+            "f1_BENIGN": 0.9048904242685955,
+            "f1_DoS": 0.8618951612903226,
+            "f1_DDoS": 0.8719596145020652,
+            "f1_PortScan": 0.8737040527803959,
+            "f1_BruteForce": 0.9226415094339623,
+            "f1_WebAttack": 0.8642533936651584,
+            "f1_Bot": 0.4963898916967509,
+            "rec_BENIGN": 0.8382,
+            "rec_DoS": 0.855,
+            "rec_DDoS": 0.95,
+            "rec_PortScan": 0.927,
+            "rec_BruteForce": 0.978,
+            "rec_WebAttack": 0.8761467889908257,
+            "rec_Bot": 0.6979695431472082,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 220
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 420
+              },
+              {
+                "concept": "Thursday",
+                "clients": 5,
+                "channels": {
+                  "recon": 5
+                },
+                "memory_client0": 552
+              },
+              {
+                "concept": "Friday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 862
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6703967446592065,
+            "macro_f1": 0.36550723117299705,
+            "f1_BENIGN": 0.8647961677583341,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.676829268292683,
+            "f1_PortScan": 0.6337579617834395,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.3831672203765227,
+            "rec_BENIGN": 0.8846,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.999,
+            "rec_PortScan": 0.995,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.43908629441624364
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8761953204476094,
+            "macro_f1": 0.8407678846156684,
+            "f1_BENIGN": 0.90603663162458,
+            "f1_DoS": 0.8720040795512494,
+            "f1_DDoS": 0.8884859474161378,
+            "f1_PortScan": 0.8607954545454546,
+            "f1_BruteForce": 0.9338959212376934,
+            "f1_WebAttack": 0.9171396140749148,
+            "f1_Bot": 0.5070175438596491,
+            "rec_BENIGN": 0.836,
+            "rec_DoS": 0.855,
+            "rec_DDoS": 0.98,
+            "rec_PortScan": 0.909,
+            "rec_BruteForce": 0.996,
+            "rec_WebAttack": 0.926605504587156,
+            "rec_Bot": 0.733502538071066,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 231
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 431
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 511
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 747
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8745676500508647,
+            "macro_f1": 0.8394597473519155,
+            "f1_BENIGN": 0.9039965247610773,
+            "f1_DoS": 0.8683274021352313,
+            "f1_DDoS": 0.8877828054298642,
+            "f1_PortScan": 0.8635071090047394,
+            "f1_BruteForce": 0.9338959212376934,
+            "f1_WebAttack": 0.9160997732426304,
+            "f1_Bot": 0.5026086956521739,
+            "rec_BENIGN": 0.8324,
+            "rec_DoS": 0.854,
+            "rec_DDoS": 0.981,
+            "rec_PortScan": 0.911,
+            "rec_BruteForce": 0.996,
+            "rec_WebAttack": 0.926605504587156,
+            "rec_Bot": 0.733502538071066,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 231
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 431
+              },
+              {
+                "concept": "Thursday",
+                "clients": 6,
+                "channels": {
+                  "recon": 6
+                },
+                "memory_client0": 511
+              },
+              {
+                "concept": "Friday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 747
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6546286876907427,
+            "macro_f1": 0.3484603297641337,
+            "f1_BENIGN": 0.8720138253532581,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6432484692233322,
+            "f1_PortScan": 0.592791182603515,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.33116883116883117,
+            "rec_BENIGN": 0.8578,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.998,
+            "rec_PortScan": 0.995,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.3883248730964467
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8493387589013225,
+            "macro_f1": 0.8024776045303804,
+            "f1_BENIGN": 0.89209726443769,
+            "f1_DoS": 0.8166849615806806,
+            "f1_DDoS": 0.8162046908315566,
+            "f1_PortScan": 0.8683473389355743,
+            "f1_BruteForce": 0.8773793714032758,
+            "f1_WebAttack": 0.8993135011441648,
+            "f1_Bot": 0.44731610337972166,
+            "rec_BENIGN": 0.8218,
+            "rec_DoS": 0.744,
+            "rec_DDoS": 0.957,
+            "rec_PortScan": 0.93,
+            "rec_BruteForce": 0.991,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.5710659898477157,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 489
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 689
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 1081
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8499491353001017,
+            "macro_f1": 0.8016043002858773,
+            "f1_BENIGN": 0.8926406926406927,
+            "f1_DoS": 0.816236972024136,
+            "f1_DDoS": 0.8155091606305922,
+            "f1_PortScan": 0.8713149274684137,
+            "f1_BruteForce": 0.8769911504424779,
+            "f1_WebAttack": 0.8993135011441648,
+            "f1_Bot": 0.43922369765066394,
+            "rec_BENIGN": 0.8248,
+            "rec_DoS": 0.744,
+            "rec_DDoS": 0.957,
+            "rec_PortScan": 0.931,
+            "rec_BruteForce": 0.991,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.5456852791878173,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 489
+              },
+              {
+                "concept": "Thursday",
+                "clients": 8,
+                "channels": {
+                  "recon": 8
+                },
+                "memory_client0": 689
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 9
+                },
+                "memory_client0": 1081
+              }
+            ]
+          }
+        }
+      },
+      "100.0": {
+        "42": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.646998982706002,
+            "macro_f1": 0.361791464333677,
+            "f1_BENIGN": 0.8582463465553236,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6405648267008985,
+            "f1_PortScan": 0.5888954518606024,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.4448336252189142,
+            "rec_BENIGN": 0.8222,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.998,
+            "rec_PortScan": 0.997,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.6446700507614214
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8821973550356053,
+            "macro_f1": 0.8388303100936757,
+            "f1_BENIGN": 0.914733676975945,
+            "f1_DoS": 0.875249500998004,
+            "f1_DDoS": 0.8836781609195402,
+            "f1_PortScan": 0.876001885902876,
+            "f1_BruteForce": 0.9271028037383178,
+            "f1_WebAttack": 0.8632768361581921,
+            "f1_Bot": 0.5317693059628543,
+            "rec_BENIGN": 0.8518,
+            "rec_DoS": 0.877,
+            "rec_DDoS": 0.961,
+            "rec_PortScan": 0.929,
+            "rec_BruteForce": 0.992,
+            "rec_WebAttack": 0.8761467889908257,
+            "rec_Bot": 0.6903553299492385,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 1100
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8786368260427263,
+            "macro_f1": 0.8357523464731035,
+            "f1_BENIGN": 0.9106392152635551,
+            "f1_DoS": 0.8736318407960199,
+            "f1_DDoS": 0.8832720588235294,
+            "f1_PortScan": 0.875176636834668,
+            "f1_BruteForce": 0.9271028037383178,
+            "f1_WebAttack": 0.8642533936651584,
+            "f1_Bot": 0.5161904761904762,
+            "rec_BENIGN": 0.8448,
+            "rec_DoS": 0.878,
+            "rec_DDoS": 0.961,
+            "rec_PortScan": 0.929,
+            "rec_BruteForce": 0.992,
+            "rec_WebAttack": 0.8761467889908257,
+            "rec_Bot": 0.6878172588832487,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 1100
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6640895218718209,
+            "macro_f1": 0.3603838415712364,
+            "f1_BENIGN": 0.8673571001792472,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.663126452041155,
+            "f1_PortScan": 0.6218329684078824,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.37037037037037035,
+            "rec_BENIGN": 0.871,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 0.999,
+            "rec_PortScan": 0.994,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.45685279187817257
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8769074262461851,
+            "macro_f1": 0.8410760025648012,
+            "f1_BENIGN": 0.9031840259039395,
+            "f1_DoS": 0.8765432098765432,
+            "f1_DDoS": 0.895264116575592,
+            "f1_PortScan": 0.8733052828424498,
+            "f1_BruteForce": 0.9304063521718823,
+            "f1_WebAttack": 0.8989547038327527,
+            "f1_Bot": 0.5098743267504489,
+            "rec_BENIGN": 0.8368,
+            "rec_DoS": 0.852,
+            "rec_DDoS": 0.983,
+            "rec_PortScan": 0.934,
+            "rec_BruteForce": 0.996,
+            "rec_WebAttack": 0.8876146788990825,
+            "rec_Bot": 0.7208121827411168,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 1100
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8771108850457783,
+            "macro_f1": 0.840641999623811,
+            "f1_BENIGN": 0.9045258620689656,
+            "f1_DoS": 0.8758371973209685,
+            "f1_DDoS": 0.8960802187784868,
+            "f1_PortScan": 0.8697696285848613,
+            "f1_BruteForce": 0.9312762973352033,
+            "f1_WebAttack": 0.8989547038327527,
+            "f1_Bot": 0.5080500894454383,
+            "rec_BENIGN": 0.8394,
+            "rec_DoS": 0.85,
+            "rec_DDoS": 0.983,
+            "rec_PortScan": 0.925,
+            "rec_BruteForce": 0.996,
+            "rec_WebAttack": 0.8876146788990825,
+            "rec_Bot": 0.7208121827411168,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 1100
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.6369277721261445,
+            "macro_f1": 0.34279682652335663,
+            "f1_BENIGN": 0.851902032308494,
+            "f1_DoS": 0.0,
+            "f1_DDoS": 0.6343165239454488,
+            "f1_PortScan": 0.5931445603576752,
+            "f1_BruteForce": 0.0,
+            "f1_WebAttack": 0.0,
+            "f1_Bot": 0.32021466905187834,
+            "rec_BENIGN": 0.8174,
+            "rec_DoS": 0.0,
+            "rec_DDoS": 1.0,
+            "rec_PortScan": 0.995,
+            "rec_BruteForce": 0.0,
+            "rec_WebAttack": 0.0,
+            "rec_Bot": 0.4543147208121827
+          },
+          "rehearsal": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8416073245167853,
+            "macro_f1": 0.7968384548955557,
+            "f1_BENIGN": 0.8823077766809257,
+            "f1_DoS": 0.8133552271483306,
+            "f1_DDoS": 0.821882951653944,
+            "f1_PortScan": 0.8615965989607935,
+            "f1_BruteForce": 0.8821698532681191,
+            "f1_WebAttack": 0.8733333333333333,
+            "f1_Bot": 0.4432234432234432,
+            "rec_BENIGN": 0.8044,
+            "rec_DoS": 0.743,
+            "rec_DDoS": 0.969,
+            "rec_PortScan": 0.912,
+            "rec_BruteForce": 0.992,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.6142131979695431,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 1100
+              }
+            ]
+          },
+          "cda": {
+            "event": "Friday",
+            "round": 25,
+            "overall": 0.8431332655137335,
+            "macro_f1": 0.7989009949239817,
+            "f1_BENIGN": 0.8843463052033231,
+            "f1_DoS": 0.8160351455244371,
+            "f1_DDoS": 0.8220338983050848,
+            "f1_PortScan": 0.8624288425047438,
+            "f1_BruteForce": 0.8796090626388272,
+            "f1_WebAttack": 0.891156462585034,
+            "f1_Bot": 0.43669724770642204,
+            "rec_BENIGN": 0.809,
+            "rec_DoS": 0.743,
+            "rec_DDoS": 0.97,
+            "rec_PortScan": 0.909,
+            "rec_BruteForce": 0.99,
+            "rec_WebAttack": 0.9013761467889908,
+            "rec_Bot": 0.6040609137055838,
+            "detected": [
+              {
+                "concept": "Tuesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 300
+              },
+              {
+                "concept": "Wednesday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 500
+              },
+              {
+                "concept": "Thursday",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Friday",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 9
+                },
+                "memory_client0": 1100
+              }
+            ]
+          }
+        }
+      }
+    },
+    "unsw": {
+      "0.1": {
+        "42": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.46599135208667347,
+            "macro_f1": 0.09090597910397216,
+            "f1_Normal": 0.6818797210110084,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0466653704063776,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.15570849807194806,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.024806201550387597,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9868918918918919,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.411663807890223,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.08452122304064437,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.042328042328042326,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5856167711217996,
+            "macro_f1": 0.2524005051207725,
+            "f1_Normal": 0.8224041076037598,
+            "f1_Fuzzers": 0.07671920769981866,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04995836802664446,
+            "f1_DoS": 0.0313305572080111,
+            "f1_Exploits": 0.48829182817395,
+            "f1_Generic": 0.749469351000193,
+            "f1_Reconnaissance": 0.29557522123893804,
+            "f1_Shellcode": 0.010256410256410256,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8051891891891891,
+            "rec_Fuzzers": 0.04536456614978555,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.823327615780446,
+            "rec_DoS": 0.019320127170457325,
+            "rec_Exploits": 0.41304347826086957,
+            "rec_Generic": 0.6174553547771713,
+            "rec_Reconnaissance": 0.38215102974828374,
+            "rec_Shellcode": 0.007936507936507936,
+            "rec_Worms": 0.0,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 79
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 150
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 226
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 300
+              }
+            ]
+          },
+          "cda": {
+            "event": "Normal_init",
+            "round": 5,
+            "overall": 0.44939999028324346,
+            "macro_f1": 0.06201186605436933,
+            "f1_Normal": 0.6201186605436932,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.0,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.0,
+            "f1_Worms": 0.0,
+            "rec_Normal": 1.0,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.0,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.0,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.0,
+            "rec_Worms": 0.0,
+            "detected": []
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5261016372734781,
+            "macro_f1": 0.13557961174708272,
+            "f1_Normal": 0.7568763630973807,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.043726027397260274,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.5500786374621197,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.005115089514066497,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.966081081081081,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.6843910806174958,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.37994806846484025,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.0026455026455026454,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5248627508137783,
+            "macro_f1": 0.2535942253762206,
+            "f1_Normal": 0.7472845543317642,
+            "f1_Fuzzers": 0.27880512091038406,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.05751258087706686,
+            "f1_DoS": 0.22306136210384356,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.797571606475716,
+            "f1_Reconnaissance": 0.4234897270775836,
+            "f1_Shellcode": 0.0,
+            "f1_Worms": 0.00821730198584798,
+            "rec_Normal": 0.6628918918918919,
+            "rec_Fuzzers": 0.43648960739030024,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.274442538593482,
+            "rec_DoS": 0.4044998777207141,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.6787663610831435,
+            "rec_Reconnaissance": 0.3950228832951945,
+            "rec_Shellcode": 0.0,
+            "rec_Worms": 0.8181818181818182,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 210
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 426
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 631
+              }
+            ]
+          },
+          "cda": {
+            "event": "Normal_init",
+            "round": 5,
+            "overall": 0.44939999028324346,
+            "macro_f1": 0.06201186605436933,
+            "f1_Normal": 0.6201186605436932,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.0,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.0,
+            "f1_Worms": 0.0,
+            "rec_Normal": 1.0,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.0,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.0,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.0,
+            "rec_Worms": 0.0,
+            "detected": []
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5011781567312831,
+            "macro_f1": 0.139948038898508,
+            "f1_Normal": 0.7444064343994597,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0584173456704875,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.5390618962985859,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05759471261654668,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9086486486486487,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.725557461406518,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.3696677441577023,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.6455026455026455,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5662196958655201,
+            "macro_f1": 0.23816634563404357,
+            "f1_Normal": 0.7866870140251435,
+            "f1_Fuzzers": 0.0006594131223211342,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0,
+            "f1_DoS": 0.26167574458222276,
+            "f1_Exploits": 0.4646520654283338,
+            "f1_Generic": 0.7970324923308082,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.04520565389023303,
+            "f1_Worms": 0.02575107296137339,
+            "rec_Normal": 0.7314594594594594,
+            "rec_Fuzzers": 0.0003299241174529858,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.0,
+            "rec_DoS": 0.5522132550745904,
+            "rec_Exploits": 0.37639238232123606,
+            "rec_Generic": 0.6746330348153251,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9391534391534392,
+            "rec_Worms": 0.4090909090909091,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 140
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 281
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 386
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 20,
+            "overall": 0.5029150269639994,
+            "macro_f1": 0.2264634619619851,
+            "f1_Normal": 0.7195862960568843,
+            "f1_Fuzzers": 0.014572538860103627,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0,
+            "f1_DoS": 0.24042525938260537,
+            "f1_Exploits": 0.43902177984695245,
+            "f1_Generic": 0.7966298117580731,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.03228591160220994,
+            "f1_Worms": 0.022113022113022112,
+            "rec_Normal": 0.6017297297297297,
+            "rec_Fuzzers": 0.0074232926426921805,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.0,
+            "rec_DoS": 0.4590364392271949,
+            "rec_Exploits": 0.3684872439813151,
+            "rec_Generic": 0.6738911557416141,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9894179894179894,
+            "rec_Worms": 0.6136363636363636,
+            "detected": [
+              {
+                "concept": "Exploitation",
+                "clients": 5,
+                "channels": {
+                  "recon": 5
+                },
+                "memory_client0": 210
+              },
+              {
+                "concept": "Disruption",
+                "clients": 5,
+                "channels": {
+                  "conf": 4,
+                  "recon": 1
+                },
+                "memory_client0": 211
+              },
+              {
+                "concept": "Persistence",
+                "clients": 6,
+                "channels": {
+                  "conf": 2,
+                  "recon": 4
+                },
+                "memory_client0": 316
+              }
+            ]
+          }
+        }
+      },
+      "0.5": {
+        "42": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5408346693873585,
+            "macro_f1": 0.1622371641631985,
+            "f1_Normal": 0.8088788472400822,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04376752165362568,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7033811124065564,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.0663441603317208,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9095405405405406,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.8970840480274442,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5434794128557046,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.25396825396825395,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5874751008113491,
+            "macro_f1": 0.26714585530621276,
+            "f1_Normal": 0.8195480129139168,
+            "f1_Fuzzers": 0.18480492813141683,
+            "f1_Analysis": 0.005759539236861051,
+            "f1_Backdoors": 0.039180765805877114,
+            "f1_DoS": 0.2418921710390415,
+            "f1_Exploits": 0.5041255460281507,
+            "f1_Generic": 0.7843199091740515,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.06200475435816165,
+            "f1_Worms": 0.02982292637465051,
+            "rec_Normal": 0.7752702702702703,
+            "rec_Fuzzers": 0.14846585285384362,
+            "rec_Analysis": 0.005908419497784343,
+            "rec_Backdoors": 0.2641509433962264,
+            "rec_DoS": 0.2863780875519687,
+            "rec_Exploits": 0.4198706431908013,
+            "rec_Generic": 0.6589475915425785,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.828042328042328,
+            "rec_Worms": 0.7272727272727273,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 196
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 406
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 557
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 629
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5899164358936987,
+            "macro_f1": 0.2676038570217655,
+            "f1_Normal": 0.8222490931076178,
+            "f1_Fuzzers": 0.18237018425460635,
+            "f1_Analysis": 0.008032128514056224,
+            "f1_Backdoors": 0.03930336549776418,
+            "f1_DoS": 0.2369749704586959,
+            "f1_Exploits": 0.50754443430167,
+            "f1_Generic": 0.7850502631330161,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.06474668908976246,
+            "f1_Worms": 0.029767441860465118,
+            "rec_Normal": 0.7810810810810811,
+            "rec_Fuzzers": 0.1436819531507753,
+            "rec_Analysis": 0.008862629246676515,
+            "rec_Backdoors": 0.2864493996569468,
+            "rec_DoS": 0.26974810467106874,
+            "rec_Exploits": 0.4245418613007546,
+            "rec_Generic": 0.660060410153145,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.8148148148148148,
+            "rec_Worms": 0.7272727272727273,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 196
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 9
+                },
+                "memory_client0": 406
+              },
+              {
+                "concept": "Disruption",
+                "clients": 8,
+                "channels": {
+                  "conf": 2,
+                  "recon": 6
+                },
+                "memory_client0": 557
+              },
+              {
+                "concept": "Persistence",
+                "clients": 8,
+                "channels": {
+                  "conf": 3,
+                  "recon": 5
+                },
+                "memory_client0": 629
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.47929116260992083,
+            "macro_f1": 0.13025662092480056,
+            "f1_Normal": 0.7754320817860909,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04287045666356011,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.4183882998784729,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.06587537091988131,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9142972972972973,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.9073756432246999,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.2645328811403741,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.29365079365079366,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5992566681241801,
+            "macro_f1": 0.28496550625335954,
+            "f1_Normal": 0.7888997831060404,
+            "f1_Fuzzers": 0.24948117402905426,
+            "f1_Analysis": 0.002347417840375587,
+            "f1_Backdoors": 0.03492679484917975,
+            "f1_DoS": 0.3362568963078229,
+            "f1_Exploits": 0.5452240924761712,
+            "f1_Generic": 0.805884731423595,
+            "f1_Reconnaissance": 0.0016773832820799553,
+            "f1_Shellcode": 0.08495678921927641,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.7176216216216216,
+            "rec_Fuzzers": 0.27763114483668755,
+            "rec_Analysis": 0.0029542097488921715,
+            "rec_Backdoors": 0.16981132075471697,
+            "rec_DoS": 0.5813157251161654,
+            "rec_Exploits": 0.48302191879266976,
+            "rec_Generic": 0.6865030999947008,
+            "rec_Reconnaissance": 0.0008581235697940503,
+            "rec_Shellcode": 0.7671957671957672,
+            "rec_Worms": 0.0,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 446
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 516
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 584
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.6018801923917796,
+            "macro_f1": 0.284811030467169,
+            "f1_Normal": 0.7912279149337816,
+            "f1_Fuzzers": 0.23781857618715624,
+            "f1_Analysis": 0.021052631578947368,
+            "f1_Backdoors": 0.027306760625412905,
+            "f1_DoS": 0.33566718781863913,
+            "f1_Exploits": 0.5421409974985961,
+            "f1_Generic": 0.8087509697439876,
+            "f1_Reconnaissance": 0.0033482142857142855,
+            "f1_Shellcode": 0.08079705199945407,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.725,
+            "rec_Fuzzers": 0.2532167601451666,
+            "rec_Analysis": 0.029542097488921712,
+            "rec_Backdoors": 0.10634648370497427,
+            "rec_DoS": 0.6038151137197358,
+            "rec_Exploits": 0.47700323392023,
+            "rec_Generic": 0.6905304435377033,
+            "rec_Reconnaissance": 0.0017162471395881006,
+            "rec_Shellcode": 0.783068783068783,
+            "rec_Worms": 0.0,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 6,
+                "channels": {
+                  "recon": 6
+                },
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "conf": 3,
+                  "recon": 7
+                },
+                "memory_client0": 446
+              },
+              {
+                "concept": "Disruption",
+                "clients": 9,
+                "channels": {
+                  "conf": 2,
+                  "recon": 7
+                },
+                "memory_client0": 516
+              },
+              {
+                "concept": "Persistence",
+                "clients": 6,
+                "channels": {
+                  "conf": 2,
+                  "recon": 4
+                },
+                "memory_client0": 584
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5253485886411116,
+            "macro_f1": 0.15636105385738824,
+            "f1_Normal": 0.8016296814165692,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.044600839445457244,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.6625354107648725,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.054844606946983544,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8987027027027027,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.902229845626072,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.4957341953261618,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.31746031746031744,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.6125686245931108,
+            "macro_f1": 0.3229692979088322,
+            "f1_Normal": 0.7990799821932038,
+            "f1_Fuzzers": 0.24285369192366535,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.011807817589576547,
+            "f1_DoS": 0.3243047508690614,
+            "f1_Exploits": 0.5119825708061002,
+            "f1_Generic": 0.8271138978510988,
+            "f1_Reconnaissance": 0.3973666441593518,
+            "f1_Shellcode": 0.08780136739834472,
+            "f1_Worms": 0.027382256297918947,
+            "rec_Normal": 0.7277027027027027,
+            "rec_Fuzzers": 0.2487627845595513,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.04974271012006861,
+            "rec_DoS": 0.5475666422108095,
+            "rec_Exploits": 0.42220625224577796,
+            "rec_Generic": 0.7199936410365111,
+            "rec_Reconnaissance": 0.33667048054919907,
+            "rec_Shellcode": 0.6455026455026455,
+            "rec_Worms": 0.5681818181818182,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 177
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 317
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 527
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 725
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.6105523976096779,
+            "macro_f1": 0.3232748684015034,
+            "f1_Normal": 0.79557318855711,
+            "f1_Fuzzers": 0.24496196973261194,
+            "f1_Analysis": 0.004899559039686428,
+            "f1_Backdoors": 0.009006980409817608,
+            "f1_DoS": 0.31623994687523055,
+            "f1_Exploits": 0.5120008727907485,
+            "f1_Generic": 0.8270378944803217,
+            "f1_Reconnaissance": 0.41274196006706293,
+            "f1_Shellcode": 0.0826046511627907,
+            "f1_Worms": 0.02768166089965398,
+            "rec_Normal": 0.7208108108108108,
+            "rec_Fuzzers": 0.2576707357307819,
+            "rec_Analysis": 0.007385524372230428,
+            "rec_Backdoors": 0.03430531732418525,
+            "rec_DoS": 0.5240890193201272,
+            "rec_Exploits": 0.4215774344232842,
+            "rec_Generic": 0.7193577446876159,
+            "rec_Reconnaissance": 0.38729977116704806,
+            "rec_Shellcode": 0.5873015873015873,
+            "rec_Worms": 0.5454545454545454,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 177
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 9,
+                "channels": {
+                  "conf": 1,
+                  "recon": 8
+                },
+                "memory_client0": 317
+              },
+              {
+                "concept": "Disruption",
+                "clients": 9,
+                "channels": {
+                  "conf": 2,
+                  "recon": 7
+                },
+                "memory_client0": 527
+              },
+              {
+                "concept": "Persistence",
+                "clients": 7,
+                "channels": {
+                  "conf": 3,
+                  "recon": 4
+                },
+                "memory_client0": 725
+              }
+            ]
+          }
+        }
+      },
+      "1.0": {
+        "42": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5304863236651606,
+            "macro_f1": 0.15936217076345402,
+            "f1_Normal": 0.7973427554996249,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.044839919741777895,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.6958231297209672,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05561590267217032,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8904594594594595,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.8816466552315609,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5345238726087648,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.3386243386243386,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5857139386872662,
+            "macro_f1": 0.2727001277883351,
+            "f1_Normal": 0.8008906321423832,
+            "f1_Fuzzers": 0.11666452524733394,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.0487225193107546,
+            "f1_DoS": 0.27962895154400097,
+            "f1_Exploits": 0.5504084321475626,
+            "f1_Generic": 0.7883712872846389,
+            "f1_Reconnaissance": 0.09274095654285021,
+            "f1_Shellcode": 0.049573973663826494,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.7339729729729729,
+            "rec_Fuzzers": 0.07489277466182778,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.07032590051457976,
+            "rec_DoS": 0.5602836879432624,
+            "rec_Exploits": 0.469098095580309,
+            "rec_Generic": 0.6631869005352128,
+            "rec_Reconnaissance": 0.05463386727688787,
+            "rec_Shellcode": 0.9312169312169312,
+            "rec_Worms": 0.0,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 364
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 525
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 698
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5890905115872321,
+            "macro_f1": 0.27263413700682493,
+            "f1_Normal": 0.8033669144926898,
+            "f1_Fuzzers": 0.09864130434782609,
+            "f1_Analysis": 0.010828370330265295,
+            "f1_Backdoors": 0.046104195481788846,
+            "f1_DoS": 0.28760951188986233,
+            "f1_Exploits": 0.5497069903725408,
+            "f1_Generic": 0.7915960052760505,
+            "f1_Reconnaissance": 0.08824254375154054,
+            "f1_Shellcode": 0.050245534125685005,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.7403243243243244,
+            "rec_Fuzzers": 0.059881227317716924,
+            "rec_Analysis": 0.014771048744460856,
+            "rec_Backdoors": 0.08576329331046312,
+            "rec_DoS": 0.561995597945708,
+            "rec_Exploits": 0.4718828602227812,
+            "rec_Generic": 0.6678501404271103,
+            "rec_Reconnaissance": 0.05120137299771167,
+            "rec_Shellcode": 0.9338624338624338,
+            "rec_Worms": 0.0,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "conf": 2,
+                  "recon": 8
+                },
+                "memory_client0": 364
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "recon": 9,
+                  "both": 1
+                },
+                "memory_client0": 525
+              },
+              {
+                "concept": "Persistence",
+                "clients": 9,
+                "channels": {
+                  "conf": 1,
+                  "recon": 8
+                },
+                "memory_client0": 698
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5487538259728902,
+            "macro_f1": 0.1651108993470018,
+            "f1_Normal": 0.8225276583409826,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04181293392620329,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7162354858423304,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.07053291536050156,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9202972972972973,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.9193825042881647,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5589528906788194,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.11904761904761904,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5827989117232668,
+            "macro_f1": 0.2891659173382418,
+            "f1_Normal": 0.7687063128430468,
+            "f1_Fuzzers": 0.3006988967827644,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04822924023811926,
+            "f1_DoS": 0.24688684353004872,
+            "f1_Exploits": 0.5629074482829424,
+            "f1_Generic": 0.830109361196576,
+            "f1_Reconnaissance": 0.015688395996754124,
+            "f1_Shellcode": 0.09315621321674794,
+            "f1_Worms": 0.02527646129541864,
+            "rec_Normal": 0.6642972972972973,
+            "rec_Fuzzers": 0.429396238865061,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.4099485420240137,
+            "rec_DoS": 0.27879677182685253,
+            "rec_Exploits": 0.4925440172475746,
+            "rec_Generic": 0.7220073128080123,
+            "rec_Reconnaissance": 0.008295194508009153,
+            "rec_Shellcode": 0.7328042328042328,
+            "rec_Worms": 0.18181818181818182,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 242
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 452
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 662
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 783
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5806247874459506,
+            "macro_f1": 0.28970677065809025,
+            "f1_Normal": 0.7657282818608595,
+            "f1_Fuzzers": 0.29888804797112417,
+            "f1_Analysis": 0.002369668246445498,
+            "f1_Backdoors": 0.05154639175257732,
+            "f1_DoS": 0.2561936936936937,
+            "f1_Exploits": 0.5593465674110836,
+            "f1_Generic": 0.8267391769270722,
+            "f1_Reconnaissance": 0.014806980433632998,
+            "f1_Shellcode": 0.09083665338645418,
+            "f1_Worms": 0.030612244897959183,
+            "rec_Normal": 0.659054054054054,
+            "rec_Fuzzers": 0.42345760475090727,
+            "rec_Analysis": 0.0029542097488921715,
+            "rec_Backdoors": 0.37735849056603776,
+            "rec_DoS": 0.3338224504768892,
+            "rec_Exploits": 0.48598634567014015,
+            "rec_Generic": 0.7169731333792592,
+            "rec_Reconnaissance": 0.008009153318077803,
+            "rec_Shellcode": 0.753968253968254,
+            "rec_Worms": 0.2727272727272727,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 242
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 9
+                },
+                "memory_client0": 452
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 9
+                },
+                "memory_client0": 662
+              },
+              {
+                "concept": "Persistence",
+                "clients": 8,
+                "channels": {
+                  "conf": 2,
+                  "recon": 6
+                },
+                "memory_client0": 783
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5447821017344411,
+            "macro_f1": 0.16126461547092988,
+            "f1_Normal": 0.8060078072931544,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04514824797843666,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7103052653144848,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05118483412322275,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.9151891891891892,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.9193825042881647,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.551163160404854,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.14285714285714285,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5813292522955837,
+            "macro_f1": 0.2708482282000191,
+            "f1_Normal": 0.8035926911373426,
+            "f1_Fuzzers": 0.2187473002159827,
+            "f1_Analysis": 0.014103129131776113,
+            "f1_Backdoors": 0.04422013938956981,
+            "f1_DoS": 0.11889908256880734,
+            "f1_Exploits": 0.5600693316000434,
+            "f1_Generic": 0.8106587529753625,
+            "f1_Reconnaissance": 0.03934077618288145,
+            "f1_Shellcode": 0.06939599779695245,
+            "f1_Worms": 0.029455081001472753,
+            "rec_Normal": 0.7387297297297297,
+            "rec_Fuzzers": 0.20884196634774002,
+            "rec_Analysis": 0.023633677991137372,
+            "rec_Backdoors": 0.6312178387650086,
+            "rec_DoS": 0.07923697725605282,
+            "rec_Exploits": 0.4644268774703557,
+            "rec_Generic": 0.6948227438927455,
+            "rec_Reconnaissance": 0.02116704805491991,
+            "rec_Shellcode": 0.5,
+            "rec_Worms": 0.22727272727272727,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 207
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 417
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 627
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 840
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5834183549531167,
+            "macro_f1": 0.2675122744849805,
+            "f1_Normal": 0.8092853098732634,
+            "f1_Fuzzers": 0.19621109607577808,
+            "f1_Analysis": 0.003639672429481347,
+            "f1_Backdoors": 0.04380791912384162,
+            "f1_DoS": 0.12269938650306748,
+            "f1_Exploits": 0.5503752807757629,
+            "f1_Generic": 0.81074398046549,
+            "f1_Reconnaissance": 0.05063291139240506,
+            "f1_Shellcode": 0.06627946703108985,
+            "f1_Worms": 0.021447721179624665,
+            "rec_Normal": 0.7533243243243243,
+            "rec_Fuzzers": 0.1674364896073903,
+            "rec_Analysis": 0.005908419497784343,
+            "rec_Backdoors": 0.6243567753001715,
+            "rec_DoS": 0.08314991440449988,
+            "rec_Exploits": 0.45122170319798777,
+            "rec_Generic": 0.6949817179799692,
+            "rec_Reconnaissance": 0.02803203661327231,
+            "rec_Shellcode": 0.5132275132275133,
+            "rec_Worms": 0.18181818181818182,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 207
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 417
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "conf": 1,
+                  "recon": 8,
+                  "both": 1
+                },
+                "memory_client0": 627
+              },
+              {
+                "concept": "Persistence",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 840
+              }
+            ]
+          }
+        }
+      },
+      "100.0": {
+        "42": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5189476752659962,
+            "macro_f1": 0.1605264787725576,
+            "f1_Normal": 0.792232618975752,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.041676704408576244,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7171066024292597,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05424886191198786,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8512432432432433,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.8902229845626072,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5600127179269779,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.3783068783068783,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5374823883787592,
+            "macro_f1": 0.26275952663534174,
+            "f1_Normal": 0.7745188043630479,
+            "f1_Fuzzers": 0.17950635751682872,
+            "f1_Analysis": 0.09279845335911067,
+            "f1_Backdoors": 0.04068522483940043,
+            "f1_DoS": 0.17636632200886262,
+            "f1_Exploits": 0.4931159819363366,
+            "f1_Generic": 0.7976878612716763,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.0431569612769731,
+            "f1_Worms": 0.02975929978118162,
+            "rec_Normal": 0.6726486486486486,
+            "rec_Fuzzers": 0.13856812933025403,
+            "rec_Analysis": 0.14180206794682423,
+            "rec_Backdoors": 0.3259005145797599,
+            "rec_DoS": 0.14600146735143066,
+            "rec_Exploits": 0.40217391304347827,
+            "rec_Generic": 0.6764347411371946,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9656084656084656,
+            "rec_Worms": 0.7727272727272727,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 922
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5385633775445756,
+            "macro_f1": 0.2639337030967717,
+            "f1_Normal": 0.7743351125912323,
+            "f1_Fuzzers": 0.18440923109645857,
+            "f1_Analysis": 0.09687936655798789,
+            "f1_Backdoors": 0.04136148211977596,
+            "f1_DoS": 0.17683017742656926,
+            "f1_Exploits": 0.49362216846272267,
+            "f1_Generic": 0.7996382009855905,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.04336461922300107,
+            "f1_Worms": 0.028896672504378284,
+            "rec_Normal": 0.6724054054054054,
+            "rec_Fuzzers": 0.14302210491586936,
+            "rec_Analysis": 0.1536189069423929,
+            "rec_Backdoors": 0.3293310463121784,
+            "rec_DoS": 0.1450232330643189,
+            "rec_Exploits": 0.4032518864534675,
+            "rec_Generic": 0.6792962747072228,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9656084656084656,
+            "rec_Worms": 0.75,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 922
+              }
+            ]
+          }
+        },
+        "43": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5348224262741097,
+            "macro_f1": 0.16445559336831658,
+            "f1_Normal": 0.8205812387509283,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.039542219939843005,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7279394449116905,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05649303008070433,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8810270270270271,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.9245283018867925,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5733135498913677,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.2037037037037037,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5353811397755429,
+            "macro_f1": 0.2539160952776959,
+            "f1_Normal": 0.7517423696226868,
+            "f1_Fuzzers": 0.24952290076335878,
+            "f1_Analysis": 0.01685178092684795,
+            "f1_Backdoors": 0.07597012206230642,
+            "f1_DoS": 0.01947333480858597,
+            "f1_Exploits": 0.5168897011141897,
+            "f1_Generic": 0.8352154037116648,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.04693283976731888,
+            "f1_Worms": 0.0265625,
+            "rec_Normal": 0.634054054054054,
+            "rec_Fuzzers": 0.25882547014186735,
+            "rec_Analysis": 0.03249630723781388,
+            "rec_Backdoors": 0.7152658662092625,
+            "rec_DoS": 0.010760577158229395,
+            "rec_Exploits": 0.3938196191160618,
+            "rec_Generic": 0.730962853054952,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9391534391534392,
+            "rec_Worms": 0.7727272727272727,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 922
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5321746101151436,
+            "macro_f1": 0.25291730900049836,
+            "f1_Normal": 0.7482934054611026,
+            "f1_Fuzzers": 0.24806077568972412,
+            "f1_Analysis": 0.014084507042253521,
+            "f1_Backdoors": 0.07614440562572786,
+            "f1_DoS": 0.02193076757686519,
+            "f1_Exploits": 0.511515007992422,
+            "f1_Generic": 0.8361062375219311,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.04681353265145555,
+            "f1_Worms": 0.026224450443501735,
+            "rec_Normal": 0.6280810810810811,
+            "rec_Fuzzers": 0.2558561530847905,
+            "rec_Analysis": 0.026587887740029542,
+            "rec_Backdoors": 0.7289879931389366,
+            "rec_DoS": 0.012472487160674981,
+            "rec_Exploits": 0.3880704275961193,
+            "rec_Generic": 0.7323406284775582,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9444444444444444,
+            "rec_Worms": 0.7727272727272727,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 922
+              }
+            ]
+          }
+        },
+        "44": {
+          "nonstat": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5262838264587281,
+            "macro_f1": 0.16204022481176683,
+            "f1_Normal": 0.7976994499229391,
+            "f1_Fuzzers": 0.0,
+            "f1_Analysis": 0.0,
+            "f1_Backdoors": 0.04243520192887282,
+            "f1_DoS": 0.0,
+            "f1_Exploits": 0.0,
+            "f1_Generic": 0.7287014338963699,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.05156616236948647,
+            "f1_Worms": 0.0,
+            "rec_Normal": 0.8602972972972973,
+            "rec_Fuzzers": 0.0,
+            "rec_Analysis": 0.0,
+            "rec_Backdoors": 0.9056603773584906,
+            "rec_DoS": 0.0,
+            "rec_Exploits": 0.0,
+            "rec_Generic": 0.5749562821260135,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.3201058201058201,
+            "rec_Worms": 0.0
+          },
+          "rehearsal": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.53321916144391,
+            "macro_f1": 0.27257647283201875,
+            "f1_Normal": 0.7557287556965491,
+            "f1_Fuzzers": 0.23854646613926803,
+            "f1_Analysis": 0.05646817248459959,
+            "f1_Backdoors": 0.04350490196078431,
+            "f1_DoS": 0.2415714683755921,
+            "f1_Exploits": 0.5175226416155707,
+            "f1_Generic": 0.8036912751677853,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.045995945261023824,
+            "f1_Worms": 0.022735101619014812,
+            "rec_Normal": 0.6341891891891892,
+            "rec_Fuzzers": 0.22632794457274827,
+            "rec_Analysis": 0.08124076809453472,
+            "rec_Backdoors": 0.3653516295025729,
+            "rec_DoS": 0.21203228173147468,
+            "rec_Exploits": 0.4132231404958678,
+            "rec_Generic": 0.6853372900217265,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.9603174603174603,
+            "rec_Worms": 0.75,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 10,
+                "channels": {},
+                "memory_client0": 923
+              }
+            ]
+          },
+          "cda": {
+            "event": "Persistence",
+            "round": 25,
+            "overall": 0.5326361560511101,
+            "macro_f1": 0.2756625030360611,
+            "f1_Normal": 0.7531980270073583,
+            "f1_Fuzzers": 0.24737417023779515,
+            "f1_Analysis": 0.08089563019140483,
+            "f1_Backdoors": 0.03902871715267768,
+            "f1_DoS": 0.24474912485414235,
+            "f1_Exploits": 0.5173291117770114,
+            "f1_Generic": 0.8061025148066606,
+            "f1_Reconnaissance": 0.0,
+            "f1_Shellcode": 0.045306224899598395,
+            "f1_Worms": 0.022641509433962263,
+            "rec_Normal": 0.6293783783783784,
+            "rec_Fuzzers": 0.24282415044539757,
+            "rec_Analysis": 0.1654357459379616,
+            "rec_Backdoors": 0.3018867924528302,
+            "rec_DoS": 0.20518464172169235,
+            "rec_Exploits": 0.41097736255839024,
+            "rec_Generic": 0.6887817285782417,
+            "rec_Reconnaissance": 0.0,
+            "rec_Shellcode": 0.955026455026455,
+            "rec_Worms": 0.75,
+            "detected": [
+              {
+                "concept": "Reconnaissance",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 280
+              },
+              {
+                "concept": "Exploitation",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 490
+              },
+              {
+                "concept": "Disruption",
+                "clients": 10,
+                "channels": {
+                  "recon": 10
+                },
+                "memory_client0": 700
+              },
+              {
+                "concept": "Persistence",
+                "clients": 9,
+                "channels": {
+                  "recon": 9
+                },
+                "memory_client0": 923
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Versions recorded in the final-evaluation result files (Python 3.11.9).
+# Install the CUDA 11.8 build of PyTorch first, as shown in the README.
+torch==2.7.1
+numpy==2.2.6
+pandas==2.3.2
+scipy==1.17.1
+scikit-learn==1.6.1
+matplotlib==3.10.3
+
+# TabFM extension only (downloads about 3.3 GB of weights on first use)
+tabfm==1.0.1

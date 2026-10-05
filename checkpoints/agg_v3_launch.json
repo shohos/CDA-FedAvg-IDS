@@ -1,0 +1,68 @@
+{
+ "protocol": "FINAL_EVAL_PROTOCOL_v3.md",
+ "protocol_sha256": "987f67ea898484204d0966f9fea93506ba3e0243296031db8b8bfa3f248dac38",
+ "frozen_at": "2026-09-27 19:32:33",
+ "code_sha256": {
+  "final_eval.py": "0269711080ec21ed36f5eb91aa202630a1af0a5f95750cc24492f5231bdce30b",
+  "ids_loader.py": "2e33e4ab786212c432b80ae2d3176cb95838cc90c3292268a33e7dc7d2b6327f",
+  "unsw_loader.py": "d8dbf579cc192228ecb0b84ad1f9b49ef5d304d78cff4a2c11051296229f30d3",
+  "ids2018_loader.py": "75da9e7e63668755a151b14326fe351f3324565855b8fe19e6d64d2251c82ec9",
+  "ids_cda_pipeline.py": "b9983b156655c92d8cb32a04048756b4e3e0d87e52b8bd06e2a2573af8d175e5",
+  "unsw_cda_pipeline.py": "9132c910a79f8e00846bc89da5e11435575986e54826c13cd821d14ea4673846",
+  "drift_channels.py": "69bdcbbbf9e3fa65099d6d19015abede00b3e92cd2aa5c7968d200559fc43f6e",
+  "fl_iids.py": "1db724fbaa7c18d355d444620058a23a7f23b398558debe3ee1156dc8b2ed944",
+  "memory_bound.py": "bd82e238765c149c2dc0311d78375252979d294c270b75da8499cf4035e3e39e",
+  "aggregators.py": "8f9b02d86c9e18c26c80464d74e220093a98879cc80bf589d098068f36698d34",
+  "analyse_agg.py": "495ebc6e6f4d6272838b3d7c2ce49418c5c7206d70ef84d16dd02f83c44600c6",
+  "analyse_final_eval.py": "3b5f57109272a6be440e86404f920280c1e05858d0176bc6772c5c857f2d2d32"
+ },
+ "seeds_checked_unused": [
+  800,
+  801,
+  802,
+  803,
+  804,
+  805,
+  806,
+  807,
+  808,
+  809
+ ],
+ "fedprox_mu": 0.001,
+ "rules": [
+  "fedavg",
+  "fedprox",
+  "scaffold",
+  "median"
+ ],
+ "arms": [
+  "nonstat",
+  "rehearsal",
+  "cda"
+ ],
+ "alphas": [
+  0.1,
+  0.5,
+  100
+ ],
+ "datasets": [
+  "cicids",
+  "unsw",
+  "ids2018"
+ ],
+ "out_dir": "checkpoints/agg/",
+ "deviations": [
+  {
+   "when": "2026-09-28 00:25 (BST)",
+   "what": "fedavg job stopped with \"CUDA error: an illegal memory access was encountered\" in ids2018 alpha=100 seed=805, arm rehearsal (nonstat of that cell was saved). The user confirmed that another GPU job had been started on the same machine. fedprox, scaffold and median jobs ran on unaffected.",
+   "action": "Resumed at 03:1x BST with the same command and settings check (final_eval.py refuses to resume into a file written with different settings); only the unfinished arms of the cell are repeated. To catch up, fedavg is resumed as three parallel single-dataset jobs (ids2018 resume, cicids, unsw), each writing its own agg/fedavg_<ds>.json, as the protocol allows parallel jobs. After completion, the affected cell (ids2018, alpha=100, seed=805, all three arms) is rerun from scratch into a separate file and compared with the saved results.",
+   "code_changed": false
+  }
+ ],
+ "crash_verification": {
+  "cell": "ids2018 alpha=100 seed=805 (fedavg), arms nonstat, rehearsal, cda",
+  "method": "rerun from scratch into checkpoints/agg_crashcheck/fedavg_ids2018_s805.json and compared field by field with the saved results (timing ignored) by compare_crash_cell.py",
+  "result": "all three arms and the concept record identical, bit for bit",
+  "date": "2026-09-28"
+ }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "norm": "layer",
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "cicids_conf_null": {
+    "client_concept_fp": 0.0,
+    "concept_fp": 0.0,
+    "mean_latency": null,
+    "mean_streamed": 3196.3333333333335
+  },
+  "cicids_conf_real": {
+    "client_concept_fp": 0.0,
+    "concept_fp": 0.0,
+    "mean_latency": null,
+    "mean_streamed": 35316.0
+  },
+  "cicids_recon_null": {
+    "client_concept_fp": 8.666666666666666,
+    "concept_fp": 3.6666666666666665,
+    "mean_latency": 107.8076923076923,
+    "mean_streamed": 2372.0
+  },
+  "cicids_recon_real": {
+    "client_concept_fp": 29.0,
+    "concept_fp": 4.0,
+    "mean_latency": 220.0,
+    "mean_streamed": 9445.0
+  },
+  "cicids_hybrid_null": {
+    "client_concept_fp": 8.666666666666666,
+    "concept_fp": 3.6666666666666665,
+    "mean_latency": 107.61538461538461,
+    "mean_streamed": 2370.3333333333335
+  },
+  "cicids_hybrid_real": {
+    "client_concept_fp": 29.0,
+    "concept_fp": 4.0,
+    "mean_latency": 219.95402298850576,
+    "mean_streamed": 9443.666666666666
+  },
+  "unsw_conf_null": {
+    "client_concept_fp": 0.0,
+    "concept_fp": 0.0,
+    "mean_latency": null,
+    "mean_streamed": 3997.0
+  },
+  "unsw_conf_real": {
+    "client_concept_fp": 0.0,
+    "concept_fp": 0.0,
+    "mean_latency": null,
+    "mean_streamed": 50009.0
+  },
+  "unsw_recon_null": {
+    "client_concept_fp": 11.666666666666666,
+    "concept_fp": 4.0,
+    "mean_latency": 106.8,
+    "mean_streamed": 2706.3333333333335
+  },
+  "unsw_recon_real": {
+    "client_concept_fp": 31.0,
+    "concept_fp": 4.0,
+    "mean_latency": 220.7741935483871,
+    "mean_streamed": 10316.666666666666
+  },
+  "unsw_hybrid_null": {
+    "client_concept_fp": 11.666666666666666,
+    "concept_fp": 4.0,
+    "mean_latency": 106.8,
+    "mean_streamed": 2706.3333333333335
+  },
+  "unsw_hybrid_real": {
+    "client_concept_fp": 31.0,
+    "concept_fp": 4.0,
+    "mean_latency": 220.66666666666666,
+    "mean_streamed": 10313.333333333334
+  }
+}

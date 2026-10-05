@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "draws": 200,
+  "alphas": [
+   0.1,
+   0.5,
+   1.0,
+   100.0
+  ],
+  "definitions": "\npartition_properties.py -- regenerates Table 4.3 (measured Dirichlet partition\nproperties) from the real loaders and the real dirichlet_partition, and saves it.\n\nThe table's earlier numbers were recorded only in STATE.md \u00a73p; the script that\nproduced them was not kept. This one states its definitions:\n\n  For every concept after the first, an ARRIVING class is an attack class that\n  is present in that concept and in no earlier one. For each (draw, concept,\n  arriving class), on the concept's 10-client split:\n    holders_ge1    clients holding at least 1 sample of it\n    holders_ge200  clients holding at least 200 (the detector's minimum window,\n                   2 x Delta)\n    top3_share     share of its samples held by the 3 largest holders\n  The RARE class of a concept is its smallest arriving class; the table reports\n  the rare-class values averaged over draws and concepts.\n    size_ratio     largest / smallest non-empty client, per concept (median over\n                   draws and concepts, because the ratio is heavy-tailed)\n    size_corr      Pearson correlation of client sizes between consecutive\n                   concepts, pooled over draws\n\nThe class counts come from the actual loader at seed 42 (training rows after the\n5,000-per-class cap and the 20% test split); each draw re-partitions them with a\nfresh generator, exactly as load_ids_dataset does per concept.\n\n    python partition_properties.py --draws 200\n"
+ },
+ "cicids": {
+  "class_counts": [
+   [
+    4000
+   ],
+   [
+    4000,
+    0,
+    0,
+    0,
+    4000
+   ],
+   [
+    4000,
+    4000
+   ],
+   [
+    3999,
+    0,
+    0,
+    0,
+    0,
+    1645
+   ],
+   [
+    4000,
+    0,
+    4000,
+    4000,
+    0,
+    0,
+    1766
+   ]
+  ],
+  "0.1": {
+   "holders_ge1": 5.99625,
+   "holders_ge200": 2.39625,
+   "top3_share": 0.9539663300701445,
+   "size_ratio_median": 670.8333333333333,
+   "size_ratio_mean": 1215.7352010251632,
+   "size_corr": -0.017619288788731365,
+   "n_rare_cases": 800
+  },
+  "0.5": {
+   "holders_ge1": 9.58125,
+   "holders_ge200": 4.03625,
+   "top3_share": 0.7445110243987236,
+   "size_ratio_median": 33.52787716159809,
+   "size_ratio_mean": 159.36247136620509,
+   "size_corr": -0.0470785748565822,
+   "n_rare_cases": 800
+  },
+  "1": {
+   "holders_ge1": 9.965,
+   "holders_ge200": 4.78125,
+   "top3_share": 0.627302365569074,
+   "size_ratio_median": 10.756345270890726,
+   "size_ratio_mean": 33.86464654091041,
+   "size_corr": -0.058972603673702495,
+   "n_rare_cases": 800
+  },
+  "100": {
+   "holders_ge1": 10.0,
+   "holders_ge200": 5.255,
+   "top3_share": 0.33280432634583673,
+   "size_ratio_median": 1.244813119245169,
+   "size_ratio_mean": 1.2616439886508761,
+   "size_corr": -0.3815059603903091,
+   "n_rare_cases": 800
+  }
+ },
+ "unsw": {
+  "class_counts": [
+   [
+    5000
+   ],
+   [
+    5000,
+    0,
+    2000,
+    0,
+    0,
+    0,
+    0,
+    5000
+   ],
+   [
+    5000,
+    5000,
+    0,
+    0,
+    0,
+    5000
+   ],
+   [
+    5000,
+    0,
+    0,
+    0,
+    5000,
+    0,
+    5000
+   ],
+   [
+    5000,
+    0,
+    0,
+    1746,
+    0,
+    0,
+    0,
+    0,
+    1133,
+    130
+   ]
+  ],
+  "0.1": {
+   "holders_ge1": 5.27,
+   "holders_ge200": 1.78875,
+   "top3_share": 0.964633625,
+   "size_ratio_median": 660.5892857142858,
+   "size_ratio_mean": 1321.4102885057775,
+   "size_corr": 0.0009018360151647272,
+   "n_rare_cases": 800
+  },
+  "0.5": {
+   "holders_ge1": 9.16375,
+   "holders_ge200": 3.3975,
+   "top3_share": 0.753318096153846,
+   "size_ratio_median": 21.769315789473687,
+   "size_ratio_mean": 131.23399087413713,
+   "size_corr": -0.005484431089295717,
+   "n_rare_cases": 800
+  },
+  "1": {
+   "holders_ge1": 9.815,
+   "holders_ge200": 4.15125,
+   "top3_share": 0.6394118076923077,
+   "size_ratio_median": 7.559302048729606,
+   "size_ratio_mean": 26.230192319539093,
+   "size_corr": -0.00044928419062600824,
+   "n_rare_cases": 800
+  },
+  "100": {
+   "holders_ge1": 10.0,
+   "holders_ge200": 6.25625,
+   "top3_share": 0.33447873076923074,
+   "size_ratio_median": 1.2153788575438687,
+   "size_ratio_mean": 1.2384078599500534,
+   "size_corr": -0.05010663254920369,
+   "n_rare_cases": 800
+  }
+ }
+}
